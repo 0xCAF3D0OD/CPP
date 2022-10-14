@@ -1,16 +1,15 @@
-NAME	= Zombie
+NAME	= main
 CPP		= g++
 CPP_FLG	= -std=c++98 -Wall -Wextra -Werror
-CPP_FIL	= Zombie.cpp
-DEL		= rm -rf
+CPP_FIL	= main.cpp
+CPP_DEL	= rm -rf
+
 all: $(NAME)
 
-$(NAME):
+$(NAME):	$(CPP_FIL)
 		$(CPP) $(CPP_FLG) $(CPP_FIL) -o $(NAME)
 
 fclean:
-		$(DEL) $(NAME)
+		$(CPP_DEL) $(NAME)
 
-re:	fclean all
-
-.PHONY: fclean re
+re:		fclean all

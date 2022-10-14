@@ -3,6 +3,7 @@ CPP		= g++
 CPP_FLG	= -std=c++98 -Wall -Wextra -Werror
 CPP_FIL	= Zombie.cpp
 DEL		= rm -rf
+
 all: $(NAME)
 
 $(NAME):

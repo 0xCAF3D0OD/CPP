@@ -5,33 +5,26 @@
 #ifndef CPP_PHONEBOOK_HPP
 #define CPP_PHONEBOOK_HPP
 
-#include <iostream>
-#include <string>
+# include "contact.hpp"
+# include <iostream>
+# include <string>
 
 class	phoneBook
 {
-	private:
-		std::string contact;
-		int 		idx;
-	public:
-
-};
-
-class	contact
-{
 private:
-	std::string name;
-	std::string firstName;
-	std::string nickName;
-	std::string phoneNumber;
-	std::string secret;
+	contact		contactTab[8];
+	int 		count;
+	std::string firstName_p;
+	std::string name_p;
+	std::string nickName_p;
 public:
-	std::string tab[8];
-	std::string	str;
-	void	fillContact(int i);
+	phoneBook();
 	void	searchContact();
-	void	printContact() const;
-
+	void	displayCmd();
+	void	displayContact(int i);
+	void	addContact();
+	~phoneBook();
 };
+
 
 #endif //CPP_PHONEBOOK_HPP

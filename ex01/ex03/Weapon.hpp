@@ -6,16 +6,18 @@
 #define CPP_WEAPON_HPP
 
 #include <iostream>
-#include "HumanA.hpp"
-#include "HumanB.hpp"
+#include <string>
 
 class	Weapon
 {
 	private:
-		std::string type;
+		std::string _type;
+
 	public:
-		std::string getType();
-		void		setType();
+		Weapon(std::string type);
+		std::string	getType();
+		void		setType(std::string type);
+		~Weapon();
 };
 
 

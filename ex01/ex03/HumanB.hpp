@@ -5,14 +5,18 @@
 #ifndef CPP_HUMANB_HPP
 #define CPP_HUMANB_HPP
 
-#include <iostream>
 #include "Weapon.hpp"
 
 class HumanB
 {
 	private:
-		std::string name;
+		std::string _name;
+		Weapon		*_weapon;
+
 	public:
+		HumanB(std::string name);
+		void	setWeapon(Weapon weapon);
 		void	attack();
+		~HumanB();
 };
 #endif //CPP_HUMANB_HPP

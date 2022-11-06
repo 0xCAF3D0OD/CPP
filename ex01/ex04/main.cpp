@@ -35,14 +35,7 @@ std::string strReplace(std::string &line, std::string str1, std::string str2)
 	}
 	return (line);
 }
-/*	For this exercise we use /ifstream who display data from a file and /ofstream who write in a file.
- * 	we take the first parameter to take the name of the right file who exist in the directory.
- * 	we create with /ofstream a new file but with ".replace" at the end.
- * 	then we use /getline, getline stock a line in a string => there it's "line".
- * 	so yet line has the first line of the file "filename" then we verify if the args are note empty.
- * 	Yet we replace all the word "str1" there are contained in the line and replace it with "str2"
- * 	and we place the modified line in the new "filename.replace".
- * */
+
 int	getSed(std::string filename, std::string str1, std::string str2)
 {
 	std::string 	line;
@@ -50,7 +43,7 @@ int	getSed(std::string filename, std::string str1, std::string str2)
 	std::ofstream 	input(filename + ".replace");
 
 	manageError(filename, str1, str2);
-	if (intput && output)
+	if (input && output)
 	{
 		while (std::getline(output, line))
 		{

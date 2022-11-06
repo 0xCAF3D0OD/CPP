@@ -21,7 +21,7 @@
  *										how to know when you must use intern or extern: when you must modify value from the classe it's better to use the intern methode
  *										but when you don't modifie a value you can use the extern methode directly.
  *
- *	*	why "const integer operator+(integer, integer const&);" ?			it's bloc the possibility to modifie the result of a function.
+ *	*	why "const integer operator+(integer, integer const&);" ?			it's block the possibility to modifie the result of a function.
  *
  *	*	why "ostream& operator<<(ostream& sortie, complexe const& z);" ?	it's the same as operator<<(cout << z1, endl); who is the same as operator<<(operator <<(cout << z1), endl); the second operator is
  *																			at the first place in the parameter so it must be the same type as the first argument "ostream& operator" it give the possibility to repeat the the "<<" operator.

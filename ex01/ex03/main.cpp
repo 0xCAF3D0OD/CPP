@@ -10,10 +10,10 @@ int main (void)
 	{
 		Weapon club = Weapon("crude spiked club");
 
-		HumanA Roge("René", club);
-		Roge.attack();
+		HumanA Rene("René", club);
+		Rene.attack();
 		club.setType("some other type of club");
-		Roge.attack();
+		Rene.attack();
 	}
 	{
 		Weapon club = Weapon("crude spiked club");

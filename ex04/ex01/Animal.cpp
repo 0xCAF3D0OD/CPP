@@ -30,6 +30,7 @@ void	Animal::makeSound() const
 	std::cout << getType() << "🦄:	is a animal ?!! we don't know what sound he make"
 	<< std::endl << std::endl;
 }
+
 Animal::~Animal()
 {
 	std::cout << "Animal destructor is called" << std::endl;

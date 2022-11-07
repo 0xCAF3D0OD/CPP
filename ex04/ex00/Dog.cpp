@@ -5,8 +5,17 @@
 #include "Dog.hpp"
 
 Dog::Dog()
+: type("Dog")
 {
-	std::cout << "Dog constructor is called" << std::endl;
+	std::cout << this->type <<" constructor is called" << std::endl;
+}
+
+Dog::Dog(const Dog &src) : Animal(src) {}
+
+Dog &Dog::operator=(const Dog &rhs)
+{
+	Animal::operator=(rhs);
+	return (*this);
 }
 
 std::string 	Dog::getType() const
@@ -16,10 +25,10 @@ std::string 	Dog::getType() const
 
 void	Dog::makeSound() const
 {
-	std::cout << getType() << "🐶:	Wooouuuuuuf !" << std::endl;
+	std::cout << getType() << " 🐶:	Wooouuuuuuf !" << std::endl;
 }
 
 Dog::~Dog()
 {
-	std::cout << "Dog destructor is called" << std::endl;
+	std::cout << getType() << " destructor is called" << std::endl;
 }

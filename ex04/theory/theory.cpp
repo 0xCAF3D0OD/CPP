@@ -23,8 +23,8 @@
  *				 						A "magicien" is a "sorcier" who is a "Personnage".
  *
  *				 	"The choice of the methods to be called is made during the execution of the program
- *				 	according to the real nature
- *				 	of the instance concerned" EPFL videos; that depends on the dynamic link resolution;
+ *				 	according to the real nature of the instance concerned" EPFL videos;
+ *				 	that depends on the dynamic link resolution;
  *
  *				 	What does it mean:	In c++ it's the type of the variable who determine the methode to execute;
  *				 	⌲	The static link resolution is when the standard call is called (when you add nothing more);
@@ -47,16 +47,16 @@
  *
  * ------------------------------------------------------------------------------------------------------------------------------
  *
- * 	abstract class:	⌲	Is used to impose on the subclasses, that they must redefine the inherited virtual method
+ * 	abstract class:	⌲	Is used to impose on the subclasses, that they must redefine the inherited virtual method.
  * 					⌲	It's signaled as a =0 at the end of the prototype.
  * 					⌲	In general it's incompletely specified: it has no corps => no definition in the class.
  *
- * 					Abstract class is a class who content at less 1 virtual method pur
- * 					(Pur virtual function => virtual void show() = 0;):
+ * 					Abstract class is a class who content at less 1 virtual method pur.
+ * 					"Pur virtual function => virtual void show() = 0":
  * 					⌲	Can't be instanced.
  * 					⌲	The subclass stay abstract, as long as it does not provide the definitions from all the pure virtual
  * 						methods inherited. As long, they don't delete the "= 0".
- * 					If the "child class" redefine all the pur virtual methods => the "child class" isn't a abstract class
+ * 					If the "child class" redefine all the pur virtual methods => the "child class" isn't an abstract class
  * 					any more, but if one of the pur virtual methods isn't redefine in the "child class", the class stay as
  * 					an abstract class.
  * */

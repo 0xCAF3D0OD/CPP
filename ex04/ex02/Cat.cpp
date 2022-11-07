@@ -7,14 +7,15 @@
 Cat::Cat()
 : type("cat")
 {
+	this->brain = new Brain();
 	std::cout << this->type <<" constructor is called" << std::endl;
 }
 
-Cat::Cat(const Cat &src) : Animal(src) {}
+Cat::Cat(const Cat &src) : AAnimal(src) {}
 
 Cat &Cat::operator=(const Cat &rhs)
 {
-	Animal::operator=(rhs);
+	AAnimal::operator=(rhs);
 	return (*this);
 }
 
@@ -25,7 +26,7 @@ std::string 	Cat::getType() const
 
 void	Cat::makeSound() const
 {
-	std::cout << getType() << " 🐱:	miaou!" << std::endl;
+	std::cout << getType() << "🐱:	miaou!" << std::endl;
 }
 
 Cat::~Cat()

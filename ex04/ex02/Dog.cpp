@@ -11,11 +11,11 @@ Dog::Dog()
 	std::cout << this->type <<" constructor is called" << std::endl;
 }
 
-Dog::Dog(const Dog &src) : Animal(src) {}
+Dog::Dog(const Dog &src) : AAnimal(src) {}
 
 Dog &Dog::operator=(const Dog &rhs)
 {
-	Animal::operator=(rhs);
+	AAnimal::operator=(rhs);
 	return (*this);
 }
 

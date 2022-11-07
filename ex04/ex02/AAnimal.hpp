@@ -8,18 +8,18 @@
 #include <iostream>
 #include <string>
 
-class Animal
+class AAnimal
 {
 private:
 	std::string type;
 public:
-	Animal(void);
-	Animal(Animal const &src);
+	AAnimal(void);
+	AAnimal(AAnimal const &src);
 
-	Animal	&operator=(Animal const &rhs);
-	virtual	void 		makeSound(void) const;
+	AAnimal	&operator=(AAnimal const &rhs);
+	virtual	void 		makeSound(void) const = 0;
 	virtual std::string getType(void) const;
 
-	virtual ~Animal(void);
+	virtual ~AAnimal(void);
 };
 #endif //CPP_BASE_CLASS_HPP

@@ -15,42 +15,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b09347-cf90-4d20-ba2f-5536f3a58785" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ex05/ex00/Bureaucrat.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex05/ex00/Bureaucrat.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex02/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex02/ex00/cours/srchg_fonction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex02/Theory/srchg_fonction.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex02/ex00/cours/srchg_operateur.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex02/Theory/srchg_operateur.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex02/ex01/fixed.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex02/ex01/fixed.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex00/Animal.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex00/Animal.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex00/Animal.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex00/Animal.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex00/Cat.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex00/Cat.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex00/Cat.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex00/Cat.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex00/Dog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex00/Dog.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex00/Dog.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex00/Dog.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex00/WrongAnimal.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex00/WrongAnimal.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex00/WrongAnimal.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex00/WrongAnimal.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex00/WrongCat.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex00/WrongCat.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex00/WrongCat.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex00/WrongCat.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex01/Animal.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex01/Animal.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex01/Animal.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex01/Animal.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex01/Brain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex01/Brain.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex01/Brain.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex01/Brain.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex01/Cat.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex01/Cat.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex01/Cat.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex01/Cat.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex01/Dog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex01/Dog.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex01/Dog.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex01/Dog.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex02/AAnimal.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex02/AAnimal.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex02/AAnimal.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex02/AAnimal.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex02/Brain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex02/Brain.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex02/Brain.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex02/Brain.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex02/Cat.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex02/Cat.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex02/Cat.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex02/Cat.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex02/Dog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex02/Dog.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/ex02/Dog.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/ex02/Dog.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex05/Theory/Theory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex05/Theory/Theory.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex05/ex00/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ex05/ex00/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex05/ex00/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex05/ex00/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex02/Theory/srchg_operateur.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex02/Theory/srchg_operateur.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +254,7 @@
       <workItem from="1667825274080" duration="3849000" />
       <workItem from="1667835078831" duration="3769000" />
       <workItem from="1667900052842" duration="949000" />
-      <workItem from="1667908825590" duration="1842000" />
+      <workItem from="1667908825590" duration="7406000" />
     </task>
     <servers />
   </component>

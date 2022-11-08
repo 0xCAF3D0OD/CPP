@@ -25,7 +25,7 @@
  *
  *	*	why "ostream& operator<<(ostream& sortie, complexe const& z);" ?	it's the same as operator<<(cout << z1, endl); who is the same as operator<<(operator <<(cout << z1), endl); the second operator is
  *																			at the first place in the parameter so it must be the same type as the first argument "ostream& operator" it give the possibility to repeat the the "<<" operator.
- *																			Ex: std::cout << "je " << "suis " << "là" << std::endl; "without ostream& operator<<(ostream& sortie, ..." it impossible to repeat the process.
+ *																			Ex: std::cout << "je " << "suis " << "là" << std::endl; without "ostream& operator<<(ostream& sortie, ..." it impossible to repeat the process.
  *																			"permet la répétition d'appel à l'opérateur d'affichage"
  *
  *	*	which type for a += operator ?										if the type to return exist already, it will be important to use the same type
@@ -50,7 +50,7 @@
  *	What is a Whole number ?!!
  *
  *	-	the Whole number are the number who don't take a comma.
- *	-	In the computer we use a binary system
+ *	-	In the computer we use a binary system (base 2 => 1 and 0)
  *
  *	To compact big number, it's easier for the computer to manage them. flying point consist of multiply 1 or 2 by power 2.
  *	the power is the "exposant", it's a number powered by 2: 10^2, 10^4, 10^6, 10^18, 10^32, etc. ... . he's size is 8 for 32 bits architecture and
@@ -63,7 +63,6 @@
 /*	with halfway cases rounded away from zero. => avec des cas intermédiaires arrondis à partir de zéro.
 /*	the return : The value of x rounded to the nearest integral (as a floating-point value).
  * */
- */
 class integer
 {
 public:

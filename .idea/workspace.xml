@@ -15,9 +15,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b09347-cf90-4d20-ba2f-5536f3a58785" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ex02/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex01/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex03/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex04/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex05/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex01/theory/theorie.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ex02/Theory/srchg_operateur.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex02/Theory/srchg_operateur.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex03/ex00/theorie.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex03/ex01/theorie.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex03/ex02/theorie.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex04/theory/theory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/theory/theory.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +262,7 @@
       <workItem from="1667825274080" duration="3849000" />
       <workItem from="1667835078831" duration="3769000" />
       <workItem from="1667900052842" duration="949000" />
-      <workItem from="1667908825590" duration="7406000" />
+      <workItem from="1667908825590" duration="13161000" />
     </task>
     <servers />
   </component>

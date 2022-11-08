@@ -11,8 +11,8 @@
 class	Dog : public Animal
 {
 private:
-	std::string type;
-	Brain		*brain;
+	std::string _type;
+	Brain		*_brain;
 
 public:
 	Dog(void);

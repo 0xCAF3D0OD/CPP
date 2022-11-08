@@ -1,10 +1,6 @@
 SRCS_DIR	= ./
 SRCS_FILES	= 	main.cpp\
-				Animal.cpp\
-				Dog.cpp\
-				Cat.cpp\
-				WrongAnimal.cpp\
-				WrongCat.cpp\
+				Bureaucrat.cpp
 
 
 SRCS		:= ${patsubst %, ${SRCS_DIR}%, ${SRCS_FILES}}
@@ -18,14 +14,11 @@ OBJS		:= ${patsubst %, ${O_DIR}%, ${OBJS_FILES}}
 DEBUGS		:= ${patsubst %, ${D_DIR}%, ${OBJS_FILES}}
 
 
-NAME		= the_animals
+NAME		= bureaucrat
 
 CXX			= g++
 HXX			= Animal.hpp\
-			  Dog.hpp\
-			  Cat.hpp\
-			  WrongAnimal.hpp\
-			  WrongCat.hpp
+			  Bureaucrat.hpp
 
 AR			= ar rcs
 MKDIR		= mkdir

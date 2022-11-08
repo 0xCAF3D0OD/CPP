@@ -10,7 +10,7 @@
 class	Cat : public Animal
 {
 private:
-	std::string	type;
+	std::string	_type;
 public:
 	Cat(void);
 	Cat(Cat const &src);

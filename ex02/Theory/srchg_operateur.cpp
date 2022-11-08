@@ -14,7 +14,7 @@
  *		a = b	=>	can be only write as an instance who call function operator; a.operator=(b);
  *
  *		externe (outdoor the classe);	is when you call a function;	Complexe operator+(Complexe, Complexe) =>	"operator+(a, b)"
- *										ex: cout << z1 worth operator<<(cout, z1);
+ *										ex: cout << z1 worth operator << (cout, z1);
  *										the prototype out the classe is;	ostream& operator<<(ostream&, complexe const&); Warning for the return the type of the function is required.
  *										you must put a '&' when you want modifie a value of a element;
  *		interne (indoor the classe);	is when you call the instance;	Complexe operator+(Complexe) const =>		"a.operator+(b)"
@@ -36,6 +36,33 @@
  *
  *	*	opérateur d'affectation (=)											"EnormeClasse& operator=(EnormeClasse const&) => a.operator=(b, c)" this is equivalent to a = b = c	=>	this is equivalent to a = (b = c); the classe exist already so
  *																			a and b is the same type; so the return value is the same type as the classe, so to avoid a new copy of a existant type we use the reference to use the existant type.
+ *
+ *																			/*	the problem with the flying point number is that the computer can't take a infinity of number the flying point number allow you
+ *
+ *
+ *
+ *
+ *	What is a flying point number for the computer (nombre à virgule)?!!
+ *
+ *	-	The memory of the computer is limited when we talk about an real number or decimal number it exists an infinity of them.
+ *		it' impossible to stock all the numbers.
+ *
+ *	What is a Whole number ?!!
+ *
+ *	-	the Whole number are the number who don't take a comma.
+ *	-	In the computer we use a binary system
+ *
+ *	To compact big number, it's easier for the computer to manage them. flying point consist of multiply 1 or 2 by power 2.
+ *	the power is the "exposant", it's a number powered by 2: 10^2, 10^4, 10^6, 10^18, 10^32, etc. ... . he's size is 8 for 32 bits architecture and
+ *	11 in 64 bits.
+ *	for the mantisse => in 1,XXXXX * 10^(e) (e = exposant) the mantisse is the XXXXX party he is composed of 23 bits in a 32 bits architecture and
+ *	52 bits in 64 bits.
+ *	for a better understanding check this reference => https://www.redlab.io/le-monde-merveilleux-des-flottants/ .
+ *
+ *	"Roundf" return the integral value that is nearest to "(value * (1 << Fixed::_fractbits))"
+/*	with halfway cases rounded away from zero. => avec des cas intermédiaires arrondis à partir de zéro.
+/*	the return : The value of x rounded to the nearest integral (as a floating-point value).
+ * */
  */
 class integer
 {

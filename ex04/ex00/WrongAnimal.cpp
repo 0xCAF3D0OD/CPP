@@ -4,7 +4,7 @@
 #include "WrongAnimal.hpp"
 
 WrongAnimal::WrongAnimal()
-:	type("WrongAnimal")
+:	_type("WrongAnimal")
 {
 	std::cout << getType() << " constructor is called" << std::endl;
 }
@@ -16,18 +16,18 @@ WrongAnimal::WrongAnimal(const WrongAnimal &src)
 
 WrongAnimal &WrongAnimal::operator=(const WrongAnimal &rhs)
 {
-	this->type = rhs.getType();
+	this->_type = rhs.getType();
 	return (*this);
 }
 
 std::string WrongAnimal::getType() const
 {
-	return (this->type);
+	return (this->_type);
 }
 
 void	WrongAnimal::makeSound() const
 {
-	std::cout << this->type << " 🦄: is a animal ?!! we don't know what sound he make"
+	std::cout << this->_type << " 🦄: is a animal ?!! we don't know what sound he make"
 			  << std::endl << std::endl;
 }
 

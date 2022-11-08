@@ -149,7 +149,7 @@ using namespace std;
 
 class DivisionError : public exception{
 public:
-	const char *what() const throw()
+	virtual const char *what() const throw()
 	{
 		return "Division par zero!\n";
 	}

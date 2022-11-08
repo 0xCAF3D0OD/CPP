@@ -5,10 +5,10 @@
 #include "Dog.hpp"
 
 Dog::Dog()
-: type("Dog")
+: _type("Dog")
 {
-	this->brain = new Brain();
-	std::cout << this->type <<" constructor is called" << std::endl;
+	this->_brain = new Brain();
+	std::cout << this->_type <<" constructor is called" << std::endl;
 }
 
 Dog::Dog(const Dog &src) : AAnimal(src) {}
@@ -21,7 +21,7 @@ Dog &Dog::operator=(const Dog &rhs)
 
 std::string 	Dog::getType() const
 {
-	return (this->type);
+	return (this->_type);
 }
 
 void	Dog::makeSound() const

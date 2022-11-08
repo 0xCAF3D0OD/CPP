@@ -16,13 +16,13 @@ AAnimal::AAnimal(const AAnimal &src)
 
 AAnimal &AAnimal::operator=(const AAnimal &rhs)
 {
-	this->type = rhs.getType();
+	this->_type = rhs.getType();
 	return (*this);
 }
 
 std::string AAnimal::getType() const
 {
-	return (this->type);
+	return (this->_type);
 }
 //	* function "makeSound" has been pured for abstract the class
 //

@@ -5,9 +5,9 @@
 #include "WrongCat.hpp"
 
 WrongCat::WrongCat()
-: type("WrongCat")
+: _type("WrongCat")
 {
-	std::cout << this->type <<" constructor is called" << std::endl;
+	std::cout << this->_type <<" constructor is called" << std::endl;
 }
 
 WrongCat::WrongCat(const WrongCat &src) : WrongAnimal(src) {}
@@ -20,7 +20,7 @@ WrongCat &WrongCat::operator=(const WrongCat &rhs)
 
 std::string 	WrongCat::getType() const
 {
-	return (this->type);
+	return (this->_type);
 }
 
 void	WrongCat::makeSound() const
@@ -31,5 +31,5 @@ void	WrongCat::makeSound() const
 
 WrongCat::~WrongCat()
 {
-	std::cout << this->type << " destructor is called" << std::endl;
+	std::cout << this->_type << " destructor is called" << std::endl;
 }

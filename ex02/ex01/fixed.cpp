@@ -2,14 +2,6 @@
 // Created by Kevin Di nocera on 10/27/22.
 //
 
-/*	the problem with the flying point number is that the computer can't take a infinity of number the flying point number allow you
- *	to compact big number, it's easier for the computer to manage them. flying point consist to multiply 1 or 2 by power 2.
- *	the power is the "exposant", it's a number powered by 2: 10^2, 10^4, 10^6, 10^18, 10^32, etc. ... . he's size is 8 for 32 bits architecture and
- *	11 in a 64 bits.
- *	for the mantisse => in 1,XXXXX * 10^(e) (e = exposant) the mantisse is the XXXXX party he is composed of 23 bits in a 32 bits architecture and
- *	52 bits in an 64 bits.
- *	for a better understanding check this reference => https://www.redlab.io/le-monde-merveilleux-des-flottants/ .
- * */
 #include "fixed.hpp"
 
 Fixed::Fixed(void)

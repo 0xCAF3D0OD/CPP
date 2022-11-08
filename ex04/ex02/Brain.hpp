@@ -7,10 +7,10 @@
 
 #include "AAnimal.hpp"
 
-class	Brain : public Animal
+class	Brain : public AAnimal
 {
 private:
-	std::string ideas[100];
+	std::string _ideas[100];
 public:
 	Brain(void);
 	Brain(Brain const &src);

@@ -10,7 +10,7 @@
 class	Dog : public Animal
 {
 private:
-	std::string type;
+	std::string _type;
 
 public:
 	Dog(void);

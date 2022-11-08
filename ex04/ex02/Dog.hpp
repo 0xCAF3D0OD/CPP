@@ -8,11 +8,11 @@
 #include "AAnimal.hpp"
 #include "Brain.hpp"
 
-class	Dog : public Animal
+class	Dog : public AAnimal
 {
 private:
-	std::string type;
-	Brain		*brain;
+	std::string _type;
+	Brain		*_brain;
 
 public:
 	Dog(void);

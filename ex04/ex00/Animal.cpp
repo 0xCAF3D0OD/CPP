@@ -5,7 +5,7 @@
 #include "Animal.hpp"
 
 Animal::Animal()
-:	type("Animal")
+:	_type("Animal")
 {
 	std::cout << getType() << " constructor is called" << std::endl;
 }
@@ -17,13 +17,13 @@ Animal::Animal(const Animal &src)
 
 Animal &Animal::operator=(const Animal &rhs)
 {
-	this->type = rhs.getType();
+	this->_type = rhs.getType();
 	return (*this);
 }
 
 std::string Animal::getType() const
 {
-	return (this->type);
+	return (this->_type);
 }
 
 void	Animal::makeSound() const

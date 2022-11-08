@@ -11,8 +11,8 @@
 class	Cat : public Animal
 {
 private:
-	std::string	type;
-	Brain		*brain;
+	std::string	_type;
+	Brain		*_brain;
 public:
 	Cat(void);
 	Cat(Cat const &src);

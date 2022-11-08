@@ -11,7 +11,7 @@
 class Animal
 {
 private:
-	std::string type;
+	std::string _type;
 public:
 	Animal(void);
 	Animal(Animal const &src);

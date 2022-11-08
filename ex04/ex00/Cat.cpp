@@ -5,9 +5,9 @@
 #include "Cat.hpp"
 
 Cat::Cat()
-: type("cat")
+: _type("cat")
 {
-	std::cout << this->type <<" constructor is called" << std::endl;
+	std::cout << this->_type <<" constructor is called" << std::endl;
 }
 
 Cat::Cat(const Cat &src) : Animal(src) {}
@@ -20,7 +20,7 @@ Cat &Cat::operator=(const Cat &rhs)
 
 std::string 	Cat::getType() const
 {
-	return (this->type);
+	return (this->_type);
 }
 
 void	Cat::makeSound() const

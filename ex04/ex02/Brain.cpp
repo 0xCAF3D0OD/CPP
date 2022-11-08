@@ -14,7 +14,7 @@ Brain::Brain(const Brain &src) : AAnimal(src) {}
 Brain &Brain::operator=(const Brain &rhs)
 {
 	for (int i = 0; i < 100; i++)
-		ideas[i] = rhs.ideas[i];
+		_ideas[i] = rhs._ideas[i];
 	return (*this);
 }
 

@@ -10,7 +10,7 @@
 class	WrongCat : public WrongAnimal
 {
 private:
-	std::string	type;
+	std::string	_type;
 public:
 	WrongCat(void);
 	WrongCat(WrongCat const &src);

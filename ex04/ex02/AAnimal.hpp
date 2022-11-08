@@ -11,7 +11,7 @@
 class AAnimal
 {
 private:
-	std::string type;
+	std::string _type;
 public:
 	AAnimal(void);
 	AAnimal(AAnimal const &src);

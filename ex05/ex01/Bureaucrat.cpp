@@ -3,6 +3,7 @@
 //
 
 #include "Bureaucrat.hpp"
+#include "Form.hpp"
 
 std::ostream	&operator<<(std::ostream &sortie, Bureaucrat const &str);
 
@@ -43,11 +44,13 @@ std::string Bureaucrat::getName()
 	return (this->_name);
 }
 
-std::ostream	&operator<<(std::ostream &sortie, Bureaucrat &str)
+void	Bureaucrat::signForm(Form &Rene)
 {
-	sortie << str.getName();
-	sortie << str.getGrade();
-	return (sortie);
+	if (Rene.getSigned() == true)
+		std::cout << "the formulaire is signed" << std::endl;
+	else
+		std::cout << "the formulaire hasn't be signed" << std::endl;
+
 }
 
 const char *Bureaucrat::GradeTooLowException::what() const throw()
@@ -63,6 +66,13 @@ const char *Bureaucrat::GradeTooHighException::what() const throw()
 const char *Bureaucrat::NameNotCharException::what() const throw()
 {
 	return ("the name is not a array\n");
+}
+
+std::ostream	&operator<<(std::ostream &sortie, Bureaucrat &str)
+{
+	sortie << str.getName();
+	sortie << str.getGrade();
+	return (sortie);
 }
 
 Bureaucrat::~Bureaucrat()

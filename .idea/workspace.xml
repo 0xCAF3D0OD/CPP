@@ -15,17 +15,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b09347-cf90-4d20-ba2f-5536f3a58785" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ex01/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex03/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex04/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex05/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex05/ex01/Bureaucrat.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex05/ex01/Bureaucrat.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex05/ex01/Form.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex05/ex01/Form.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex05/ex01/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex05/ex01/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex01/theory/theorie.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex02/Theory/srchg_operateur.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex02/Theory/srchg_operateur.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex03/ex00/theorie.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex03/ex01/theorie.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex03/ex02/theorie.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex04/theory/theory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex04/theory/theory.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex02/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ex02/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex05/ex00/Bureaucrat.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex05/ex00/Bureaucrat.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex05/ex00/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex05/ex00/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +61,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/kdi-noce/Documents/cursus42_1/CPP/ex05/ex00&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kdi-noce/Documents/cursus42_1/CPP/ex05/ex01&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;,
     &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;
@@ -69,11 +69,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ex05/ex01" />
       <recent name="$PROJECT_DIR$/ex05/ex00" />
       <recent name="$PROJECT_DIR$/ex04/ex03" />
       <recent name="$PROJECT_DIR$/ex04/ex02" />
       <recent name="$PROJECT_DIR$/ex01/theory" />
-      <recent name="$PROJECT_DIR$/ex01/ex04" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ex02" />
@@ -263,6 +263,13 @@
       <workItem from="1667835078831" duration="3769000" />
       <workItem from="1667900052842" duration="949000" />
       <workItem from="1667908825590" duration="13161000" />
+      <workItem from="1667931011207" duration="937000" />
+      <workItem from="1667935529968" duration="2848000" />
+      <workItem from="1667980774027" duration="4121000" />
+      <workItem from="1667994233930" duration="2737000" />
+      <workItem from="1668002728678" duration="4746000" />
+      <workItem from="1668011833677" duration="4101000" />
+      <workItem from="1668020507412" duration="4130000" />
     </task>
     <servers />
   </component>

@@ -106,5 +106,5 @@
 * Practice exemple can be found in the directory theory from the same exercice directory.
 * [Surcharge d'opérateurs : introduction](https://www.youtube.com/watch?v=xU_Yc9AaHzw)
 * [le-monde-merveilleux-des-flottants](https://www.redlab.io/le-monde-merveilleux-des-flottants/)
-
+* [Converter to 32 Bit Single Precision](https://binary-system.base-conversion.ro/convert-real-numbers-from-decimal-system-to-32bit-single-precision-IEEE754-binary-floating-point.php)
  

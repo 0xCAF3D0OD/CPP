@@ -68,5 +68,6 @@ int main(int ac, char **av)
 	res = checkAv(Bernard.getGrade(), Bernard.getName());
 	if (!res)
 		std::cout << Bernard.getName() << ", bureaucrat grade " << Bernard.getGrade() << std::endl;
-	return (0);
+
+		return (0);
 }

@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/kdi-noce/Documents/cursus42_1/cpp/cmake-build-debug/
+cmake_ninja_workdir = /Users/kdi-noce/Documents/cursus42_1/CPP/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target CPP
 
@@ -49,26 +49,26 @@ cmake_ninja_workdir = /Users/kdi-noce/Documents/cursus42_1/cpp/cmake-build-debug
 
 build cmake_object_order_depends_target_CPP: phony || CMakeFiles/CPP.dir
 
-build CMakeFiles/CPP.dir/ex03/ex01/ClapTrap.cpp.o: CXX_COMPILER__CPP_Debug /Users/kdi-noce/Documents/cursus42_1/cpp/ex03/ex01/ClapTrap.cpp || cmake_object_order_depends_target_CPP
-  DEP_FILE = CMakeFiles/CPP.dir/ex03/ex01/ClapTrap.cpp.o.d
+build CMakeFiles/CPP.dir/module_03/ex01/ClapTrap.cpp.o: CXX_COMPILER__CPP_Debug /Users/kdi-noce/Documents/cursus42_1/CPP/module_03/ex01/ClapTrap.cpp || cmake_object_order_depends_target_CPP
+  DEP_FILE = CMakeFiles/CPP.dir/module_03/ex01/ClapTrap.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -std=gnu++14
-  INCLUDES = -I/Users/kdi-noce/Documents/cursus42_1/cpp/ex03/ex01
+  INCLUDES = -I/Users/kdi-noce/Documents/cursus42_1/CPP/module_03/ex01
   OBJECT_DIR = CMakeFiles/CPP.dir
-  OBJECT_FILE_DIR = CMakeFiles/CPP.dir/ex03/ex01
+  OBJECT_FILE_DIR = CMakeFiles/CPP.dir/module_03/ex01
 
-build CMakeFiles/CPP.dir/ex03/ex01/main.cpp.o: CXX_COMPILER__CPP_Debug /Users/kdi-noce/Documents/cursus42_1/cpp/ex03/ex01/main.cpp || cmake_object_order_depends_target_CPP
-  DEP_FILE = CMakeFiles/CPP.dir/ex03/ex01/main.cpp.o.d
+build CMakeFiles/CPP.dir/module_03/ex01/main.cpp.o: CXX_COMPILER__CPP_Debug /Users/kdi-noce/Documents/cursus42_1/CPP/module_03/ex01/main.cpp || cmake_object_order_depends_target_CPP
+  DEP_FILE = CMakeFiles/CPP.dir/module_03/ex01/main.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -std=gnu++14
-  INCLUDES = -I/Users/kdi-noce/Documents/cursus42_1/cpp/ex03/ex01
+  INCLUDES = -I/Users/kdi-noce/Documents/cursus42_1/CPP/module_03/ex01
   OBJECT_DIR = CMakeFiles/CPP.dir
-  OBJECT_FILE_DIR = CMakeFiles/CPP.dir/ex03/ex01
+  OBJECT_FILE_DIR = CMakeFiles/CPP.dir/module_03/ex01
 
-build CMakeFiles/CPP.dir/ex03/ex01/ScavTrap.cpp.o: CXX_COMPILER__CPP_Debug /Users/kdi-noce/Documents/cursus42_1/cpp/ex03/ex01/ScavTrap.cpp || cmake_object_order_depends_target_CPP
-  DEP_FILE = CMakeFiles/CPP.dir/ex03/ex01/ScavTrap.cpp.o.d
+build CMakeFiles/CPP.dir/module_03/ex01/ScavTrap.cpp.o: CXX_COMPILER__CPP_Debug /Users/kdi-noce/Documents/cursus42_1/CPP/module_03/ex01/ScavTrap.cpp || cmake_object_order_depends_target_CPP
+  DEP_FILE = CMakeFiles/CPP.dir/module_03/ex01/ScavTrap.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -std=gnu++14
-  INCLUDES = -I/Users/kdi-noce/Documents/cursus42_1/cpp/ex03/ex01
+  INCLUDES = -I/Users/kdi-noce/Documents/cursus42_1/CPP/module_03/ex01
   OBJECT_DIR = CMakeFiles/CPP.dir
-  OBJECT_FILE_DIR = CMakeFiles/CPP.dir/ex03/ex01
+  OBJECT_FILE_DIR = CMakeFiles/CPP.dir/module_03/ex01
 
 
 # =============================================================================
@@ -78,7 +78,7 @@ build CMakeFiles/CPP.dir/ex03/ex01/ScavTrap.cpp.o: CXX_COMPILER__CPP_Debug /User
 #############################################
 # Link the executable CPP
 
-build CPP: CXX_EXECUTABLE_LINKER__CPP_Debug CMakeFiles/CPP.dir/ex03/ex01/ClapTrap.cpp.o CMakeFiles/CPP.dir/ex03/ex01/main.cpp.o CMakeFiles/CPP.dir/ex03/ex01/ScavTrap.cpp.o
+build CPP: CXX_EXECUTABLE_LINKER__CPP_Debug CMakeFiles/CPP.dir/module_03/ex01/ClapTrap.cpp.o CMakeFiles/CPP.dir/module_03/ex01/main.cpp.o CMakeFiles/CPP.dir/module_03/ex01/ScavTrap.cpp.o
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
   OBJECT_DIR = CMakeFiles/CPP.dir
   POST_BUILD = :
@@ -91,7 +91,7 @@ build CPP: CXX_EXECUTABLE_LINKER__CPP_Debug CMakeFiles/CPP.dir/ex03/ex01/ClapTra
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/kdi-noce/Documents/cursus42_1/cpp/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/kdi-noce/Documents/cursus42_1/CPP/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -102,7 +102,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/kdi-noce/Documents/cursus42_1/cpp/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/kdi-noce/Documents/cursus42_1/cpp -B/Users/kdi-noce/Documents/cursus42_1/cpp/cmake-build-debug
+  COMMAND = cd /Users/kdi-noce/Documents/cursus42_1/CPP/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/kdi-noce/Documents/cursus42_1/CPP -B/Users/kdi-noce/Documents/cursus42_1/CPP/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -118,7 +118,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /Users/kdi-noce/Documents/cursus42_1/cpp/cmake-build-debug
+# Folder: /Users/kdi-noce/Documents/cursus42_1/CPP/cmake-build-debug
 
 build all: phony CPP
 

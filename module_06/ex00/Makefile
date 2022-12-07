@@ -1,6 +1,6 @@
 SRCS_DIR	= ./
 SRCS_FILES	= 	main.cpp\
-				Bureaucrat.cpp
+				scal_conversion.cpp
 
 
 SRCS		:= ${patsubst %, ${SRCS_DIR}%, ${SRCS_FILES}}
@@ -18,7 +18,7 @@ NAME		= bureaucrat
 
 CXX			= g++
 HXX			= Animal.hpp\
-			  Bureaucrat.hpp
+			  scal_conversion.hpp
 
 AR			= ar rcs
 MKDIR		= mkdir

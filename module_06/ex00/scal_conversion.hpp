@@ -29,6 +29,7 @@ public:
 	operator	float();
 	operator	double();
 
+
 	char	*get_retn(void);
 
 	class	moreThanOne : public std::exception

@@ -1,7 +1,5 @@
 SRCS_DIR	= ./
 SRCS_FILES	= 	main.cpp\
-				Bureaucrat.cpp
-
 
 SRCS		:= ${patsubst %, ${SRCS_DIR}%, ${SRCS_FILES}}
 
@@ -14,11 +12,10 @@ OBJS		:= ${patsubst %, ${O_DIR}%, ${OBJS_FILES}}
 DEBUGS		:= ${patsubst %, ${D_DIR}%, ${OBJS_FILES}}
 
 
-NAME		= bureaucrat
+NAME		= converter
 
 CXX			= g++
-HXX			= Animal.hpp\
-			  Bureaucrat.hpp
+HXX			= whatever.hpp\
 
 AR			= ar rcs
 MKDIR		= mkdir

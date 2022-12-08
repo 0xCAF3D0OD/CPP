@@ -3,29 +3,77 @@
 //
 
 #include "scal_conversion.hpp"
+char	stock_char(char *str)
+{
+	char	ret;
+
+	ret = 0;
+	for (int i = 0; str[i]; i++)
+	{
+		if (str[i])
+		{
+			ret = str[i];
+			break ;
+		}
+	}
+	return (ret);
+}
+
+bool	check_if_Number(char *str)
+{
+	int i = 0;
+	while (str[i])
+	{
+		if (std::isdigit(str[i]) == true)
+			i++;
+		else if (str[i] == '.' || str[i] == ','
+				|| str[i] == 'f' || str[i] == '-')
+			i++;
+
+		else
+			return (false);
+	}
+	return (true);
+}
+
+bool	check_if_ascii(char *str)
+{
+	if (std::atoi(str) >= 33 && std::atoi(str) <= 126)
+		return (true);
+	return (false);
+}
 
 int main(int ac, char **av)
 {
 	double	ret;
-	int 	num;
 	if (ac != 2)
 		return (1);
 	ret = std::atof(av[1]);
-	printf("%f\n", ret);
-	printf("%d\n", 	std::atoi(av[1]));
 	try
 	{
 		Scal_conversion	*retn = new Scal_conversion(av[1], ret);
+		char 	alpha = stock_char(av[1]);
 		int 	intgr = retn->operator int();
 		double 	dbl = retn->operator double();
-		num = std::atoi(av[1]);
-		if (std::isdigit(num) == 0)
+		if (check_if_Number(av[1]))
 		{
-			std::cout << "int: " << intgr << std::endl;
-			std::cout << std::setprecision(1) << std::fixed;
-			std::cout << "float: " << ret << "f" << std::endl;
-			std::cout << "double: " << dbl << std::endl;
-			throw Scal_conversion::impossible();
+			if (check_if_ascii(av[1]))
+			{
+				alpha = retn->operator char();
+				std::cout << "int: " << intgr << std::endl;
+				std::cout << std::setprecision(1) << std::fixed;
+				std::cout << "float: " << ret << "f" << std::endl;
+				std::cout << "double: " << dbl << std::endl;
+				std::cout << "char: " << alpha << std::endl;
+			}
+			else
+			{
+				std::cout << "int: " << intgr << std::endl;
+				std::cout << std::setprecision(1) << std::fixed;
+				std::cout << "float: " << ret << "f" << std::endl;
+				std::cout << "double: " << dbl << std::endl;
+				throw Scal_conversion::impossible();
+			}
 		}
 		else
 		{
@@ -36,10 +84,11 @@ int main(int ac, char **av)
 			{
 				if (strlen(av[1]) != 1)
 					throw Scal_conversion::moreThanOne();
-				std::cout << "int: " << intgr << std::endl;
-				std::cout << "float: " << ret << std::endl;
-				std::cout << "double: " << dbl << std::endl;
-				std::cout << "char: " << retn->get_retn() << std::endl;
+				std::cout << "int: " << (int(alpha)+0) << std::endl;
+				std::cout << std::setprecision(1) << std::fixed;
+				std::cout << "float: " << (float(alpha)+0) << std::endl;
+				std::cout << "double: " << (double(alpha)+0) << std::endl;
+				std::cout << "char: " << alpha << std::endl;
 			}
 		}
 	}

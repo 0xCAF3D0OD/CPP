@@ -3,7 +3,6 @@
 //
 
 #include "Bureaucrat.hpp"
-#include "
 
 std::ostream	&operator<<(std::ostream &sortie, Bureaucrat const &str);
 

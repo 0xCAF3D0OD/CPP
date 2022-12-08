@@ -22,13 +22,13 @@ const char *Scal_conversion::moreThanOne::what() const throw()
 Scal_conversion::Scal_conversion(void)
 :	_retn(0), _flt(0.0)
 {
-	std::cout << "scal constructor is called" << std::endl;
+//	std::cout << "scal constructor is called" << std::endl;
 }
 
 Scal_conversion::Scal_conversion(char *av, float const ret)
 :	_retn(av), _flt(ret)
 {
-	std::cout << ret << " scal constructor is called" << std::endl;
+//	std::cout << ret << " scal constructor is called" << std::endl;
 }
 
 Scal_conversion::Scal_conversion(const Scal_conversion &src)
@@ -64,5 +64,5 @@ Scal_conversion::operator double()
 
 Scal_conversion::~Scal_conversion()
 {
-	std::cout << "scal destructor is called" << std::endl;
+//	std::cout << "scal destructor is called" << std::endl;
 }

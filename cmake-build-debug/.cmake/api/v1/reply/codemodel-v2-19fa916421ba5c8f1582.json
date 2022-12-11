@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "CPP::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-CPP-Debug-84a214268fedd0e630d6.json",
+					"jsonFile" : "target-CPP-Debug-4e2a8cefd1ac0f4e077c.json",
 					"name" : "CPP",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/kdi-noce/Documents/cursus42_1/CPP/cmake-build-debug",
-		"source" : "/Users/kdi-noce/Documents/cursus42_1/CPP"
+		"build" : "/Users/dino/Documents/Cursus_42/CPP/cmake-build-debug",
+		"source" : "/Users/dino/Documents/Cursus_42/CPP"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 3
+		"minor" : 4
 	}
 }

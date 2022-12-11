@@ -1,7 +1,5 @@
 SRCS_DIR	= ./
 SRCS_FILES	= 	main.cpp\
-				Data.cpp
-
 
 SRCS		:= ${patsubst %, ${SRCS_DIR}%, ${SRCS_FILES}}
 
@@ -17,14 +15,14 @@ DEBUGS		:= ${patsubst %, ${D_DIR}%, ${OBJS_FILES}}
 NAME		= converter
 
 CXX			= g++
-HXX			= Data.hpp
+HXX			= whatever.hpp\
 
 AR			= ar rcs
 MKDIR		= mkdir
 CP			= cp -f
 RM			= rm -f
 
-CXXFLAGS		= -std=c++98 -Wall -Wextra -Werror
+CXXFLAGS		= -std=c++98 -Wall -Wextra -Werror -g3
 
 
 all:		${NAME}

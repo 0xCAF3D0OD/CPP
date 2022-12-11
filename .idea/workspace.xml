@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
   <component name="CMakeReloadState">
     <option name="reloaded" value="true" />
   </component>
@@ -15,49 +21,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09b09347-cf90-4d20-ba2f-5536f3a58785" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/module_06/ex01/Data.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_06/ex01/Data.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_06/ex02/Base.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_06/ex02/Base.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_07/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_07/ex00/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_07/ex00/whatever.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_07/ex01/Data.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_07/ex01/Data.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_07/ex01/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_07/ex01/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_07/ex02/Base.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_07/ex02/Base.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_07/ex02/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_07/ex02/converter" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_07/ex02/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_07/ex02/objs/Base.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_07/ex02/objs/main.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_07/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_07/theory/main" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_07/theory/theory.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_07/ex01/iter.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-12-06T15-41-16-0395.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-57be232406afcad1986d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-27254e5865cdac509ccc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-0589f5c7d09f8d95fd40.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-12-08T12-45-11-0716.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-CPP-Debug-84a214268fedd0e630d6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-801692d215752bf11421.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CPP.dir/ex03/ex00/ClapTrap.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CPP.dir/ex03/ex00/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CPP.dir/ex03/ex01/ClapTrap.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CPP.dir/ex03/ex01/ScavTrap.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CPP.dir/ex03/ex01/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_05/ex00/Bureaucrat.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module_05/ex00/Bureaucrat.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_05/ex00/Bureaucrat.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module_05/ex00/Bureaucrat.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_05/ex00/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module_05/ex00/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_06/ex00/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/module_06/ex00/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_06/ex00/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module_06/ex00/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_06/ex00/scal_conversion.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module_06/ex00/scal_conversion.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_06/ex00/scal_conversion.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module_06/ex00/scal_conversion.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_06/ex01/Bureaucrat.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_06/ex01/Bureaucrat.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_06/ex01/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/module_06/ex01/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_06/ex01/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module_06/ex01/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_06/ex02/Bureaucrat.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_06/ex02/Bureaucrat.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_06/ex02/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/module_06/ex02/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_06/ex02/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module_06/ex02/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_06/ex03/Bureaucrat.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_06/ex03/Bureaucrat.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_06/ex03/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/module_07/ex00/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_06/ex03/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_06/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/module_06/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_07/ex00/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module_07/ex00/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_07/ex00/whatever.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module_07/ex00/whatever.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_07/ex01/Data.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_07/ex01/Data.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_07/ex01/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/module_07/ex01/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_07/ex01/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module_07/ex01/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_07/ex02/Base.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_07/ex02/Base.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module_07/ex02/Array.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_07/ex02/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/module_07/ex02/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_07/ex02/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module_07/ex02/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_07/theory/theory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module_07/theory/theory.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,31 +92,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/kdi-noce/Documents/cursus42_1/CPP&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/Users/dino/Documents/Cursus_42/CPP/module_07/ex01",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "structure.view.defaults.are.configured": "true",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/module_07/ex01" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/module_06/ex02" />
       <recent name="$PROJECT_DIR$/module_06/ex01" />
       <recent name="$PROJECT_DIR$/module_06" />
-      <recent name="$PROJECT_DIR$/module_06/ex03" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ex05/Theory" />
@@ -120,12 +133,12 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="CPP" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CPP" TARGET_NAME="CPP" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CPP" RUN_TARGET_NAME="CPP">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CPP" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CPP" TARGET_NAME="CPP" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CPP" RUN_TARGET_NAME="CPP">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -225,6 +238,7 @@
       <workItem from="1670440003769" duration="640000" />
       <workItem from="1670490785959" duration="3225000" />
       <workItem from="1670503502745" duration="13238000" />
+      <workItem from="1670689443700" duration="28613000" />
     </task>
     <servers />
   </component>

@@ -148,8 +148,9 @@ int main(void)
 //	List<T>(List<T> const &List) {}
 //	List<T>(void) {}
 //
-//private:
-//	T *_constent;
+//privat\
+
+// 	T *_constent;
 //	List<T> *_next;
 //};
 //

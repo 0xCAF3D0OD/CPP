@@ -9,6 +9,7 @@
 #include <iomanip>
 #include <iostream>
 #include <string>
+#include <algorithm>
 
 template<typename T>
 
@@ -22,14 +23,27 @@ public:
 	{
 		return (_x >= _y ? _x : _y);
 	}
+	T Min(void)
+	{
+		return (_x <= _y ? _x : _y);
+	}
+	T Swap_x(void)
+	{
+		_temp = _x;
+		return (_x = _y);
+	}
+	T Swap_y(void)
+	{
+		return (_y = _temp);
+	}
 	whatever	&operator=(whatever const &rhs);
-
 	T const &get_x(void) const {return this->_x;}
 	T const &get_y(void) const {return this->_y;}
 	~whatever<T>(void){};
 private:
-	T	const &_x;
-	T	const &_y;
+	T	_x;
+	T	_y;
+	T	_temp;
 	whatever<T>(void);
 };
 #endif //CPP_WHATEVERS_HPP

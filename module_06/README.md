@@ -14,7 +14,7 @@
 * **The hierarchy** must be respected → a **void is more general** than an `int`
 * warning with the address
 
-## Type qualifier reinterpretation**
+## Type qualifier reinterpretation
 * `const` and `volatile` = **qualifier type**.
 * **int const is more general** than an `int`.
 * When you want to pass an **address from a const** to an `int`, **it's called a demotion**,

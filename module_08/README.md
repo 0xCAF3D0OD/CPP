@@ -117,7 +117,7 @@ in C++.
   * begin(): The first element of the vector are returned by the member function begin().
   * end(): The past-the-last element of the vector are returned by the member function end().
 
-[![](img/iterators1 2.jpg)](img/iterators1.jpg)
+[![](img/iterators12.jpg)](img/iterators1.jpg)
 
 ### Iterator categories
 
@@ -127,7 +127,7 @@ in C++.
   * Bidirectional iterator
   * Random Access Iterator
 
-[![](img/iterators2 L.jpg)](img/iterators2.jpg)
+[![](img/iterators2L.jpg)](img/iterators2.jpg)
 
 ## Reference
 

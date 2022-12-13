@@ -11,7 +11,7 @@ it's components are parameterized._
 * The header Algorithm define a collection of functions, they are specifically used of a range of elements. They act of
 containers.
 
-![](../../../../Desktop/algorithm-1.jpg)
+![](img/algorithm-1.jpg)
 
 * **Algorithm**
 
@@ -33,7 +33,6 @@ containers.
 Containers or container classes **store objects and data**. There are **seven standards “first-class”** container classes, 
 **three container adaptor classes** and only **seven header files** that **provide access to these containers** or container adaptors.
 
-![](../../../../Desktop/stl-container.jpg)
 
  | container          | Description                                                                                                                                     | header file | iterator      |
 |:-------------------|:------------------------------------------------------------------------------------------------------------------------------------------------|:------------|:--------------|
@@ -48,8 +47,8 @@ Containers or container classes **store objects and data**. There are **seven st
  | queue              | Queue follows first in first<br/>out (FIFO)                                                                                                     | < queue >   | No iterator   |
  | Priority<br/>queue | The first elements that is out<br/>is always of the highest<br/>priority level                                                                  | < queue >   | No iterator   |
 
-[ ![](../../../../Desktop/Screenshot-from-2019-11-11-16-13-18 copy.png) ](../../../../Desktop/Screenshot-from-2019-11-11-16-13-18.png)
-[ ![](../../../../Desktop/Screenshot-from-2019-11-11-16-15-07 copy.png) ](../../../../Desktop/Screenshot-from-2019-11-11-16-15-07.png)
+[ ![](img/schemB1.png) ](![](img/schemB2.png))
+[ ![](img/schemL1.png) ](![](img/schemL2.png))
 
 ## Reference
 

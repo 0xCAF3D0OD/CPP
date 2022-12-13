@@ -47,8 +47,8 @@ Containers or container classes **store objects and data**. There are **seven st
  | queue              | Queue follows first in first<br/>out (FIFO)                                                                                                     | < queue >   | No iterator   |
  | Priority<br/>queue | The first elements that is out<br/>is always of the highest<br/>priority level                                                                  | < queue >   | No iterator   |
 
-[ ![](img/schemB1.png) ](![](img/schemB2.png))
-[ ![](img/schemL1.png) ](![](img/schemL2.png))
+[ ![](img/schemB1.png) ](img/schemB2.png)
+[ ![](img/schemL1.png) ](img/schemL2.png)
 
 ## Reference
 

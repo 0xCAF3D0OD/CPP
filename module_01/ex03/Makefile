@@ -1,6 +1,6 @@
 NAME	= Weapon
 CPP		= g++
-CPP_FLG	= -std=c++98 -Wall -Wextra -Werror
+CPP_FLG	= -std=c++98 -Wall -Wextra -Werror -g3
 CPP_FIL	= main.cpp\
 		  HumanA.cpp\
 		  HumanB.cpp\

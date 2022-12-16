@@ -16,9 +16,11 @@ class	phoneBook
 private:
 	contact		contactTab[8];
 	int 		count;
-	std::string firstName_p;
-	std::string name_p;
-	std::string nickName_p;
+	std::string _firstName_p;
+	std::string _name_p;
+	std::string _nickName_p;
+	std::string _phoneNumber;
+	std::string _secret;
 public:
 	phoneBook(void);
 	int 	manage_length(void);

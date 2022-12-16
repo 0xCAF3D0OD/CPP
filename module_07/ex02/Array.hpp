@@ -1,69 +1,94 @@
-//
-// Created by Kevin Di nocera on 12/7/22.
-//
-
-#ifndef CPP_ARRAY_HPP
-#define CPP_ARRAY_HPP
-
+#pragma once
 #include <iostream>
-#include <string>
-#include <cctype>
-#include <iomanip>
 
-#define	BOLD_BLACK	"\033[1m\033[30m"
-#define BOLD_RED	"\033[1m\033[31m"
-#define BOLD_G		"\033[1m\033[32m"
-#define	RESET   	"\033[0m"
-#define BOLD_Y		"\033[1m\033[33m"
+template< typename T>
 
-template<class T>
-class	Array
+// classes
+
+class Array
 {
 private:
-	T _n;
-	T *_tab;
+	T				*_array;
+	unsigned int	_size;
 
 public:
-	Array<void>() : _tab(operator new[](0)){}
-	Array<std::size_t>(std::size_t &n) : _n(n), _tab(operator new[](_n))
+	// Constructors
+	Array(): _size(0)
 	{
-		std::cout << BOLD_G << "you create an array of "
-		<< BOLD_G << _n << RESET << " elements." << std::endl;
-		this->_tab(_n) = '\0';
-	}
-	Array(Array const &src)
-	{
-		_tab = src._tab;
+		std::cout << "Default Constructor called: created empty Array of size 0" << std::endl;
+		this->_array = new T[this->_size];
+		// for (unsigned int i = 0; i < this->size(); i++)
+		// std::cout << this->_array << std::endl;
 	}
 
-	Array &operator=(Array const &rhs)
+	Array(unsigned int size): _size(size)
 	{
-		this->_tab = rhs._tab;
+		std::cout << "Constructor for an Array of size " << size << " called" << std::endl;
+		this->_array = new T[this->_size];
+		// for (unsigned int i = 0; i < this->size(); i++)
+		// 	std::cout << this->_array[i] << std::endl;
+	}
+
+	Array(const Array &src): _size(src.size())
+	{
+		std::cout << "Copy Constuctor called" << std::endl;
+		this->_array = NULL;
+		*this = src;
+	}
+
+	// Deconstructors
+	~Array()
+	{
+		if (this->_array != NULL)
+			delete [] this->_array;
+	}
+
+	// Overloaded Operators
+	Array &operator=(const Array &src)
+	{
+		if (this->_array != NULL)
+			delete [] this->_array;
+		if (src.size() != 0)
+		{
+			this->_size = src.size();
+			this->_array = new T[this->_size];
+			for (unsigned int i = 0; i < this->size(); i++)
+				this->_array[i] = src._array[i];
+		}
 		return (*this);
 	}
-	void *operator new[](std::size_t size)
+
+	T &operator[]( unsigned int index )
 	{
-		void *copy = ::operator new[](size);
-		return (copy);
-	}
-	Array &operator[](int const &access)
-	{
-		return (_tab[access]);
+		if (index >= this->_size || this->_array == NULL)
+		{
+			std::cout << "index: " << index << std::endl;
+			throw Array<T>::InvalidIndexException();
+		}
+		return (this->_array[index]);
 	}
 
-	T size(void)
-	{
-		return (strlen(_tab));
-	}
+	// Exception
 
-	class	wrongIndex : public std::exception
+	class	InvalidIndexException : public std::exception
 	{
 	public:
-		virtual char const *what() const throw()
-		{
-			std::cout << "wrong access" << std::endl;
-		}
+		virtual const char	*what() const throw();
 	};
-	virtual ~Array(void);
+	// Public Methods
+
+	// Getter
+	unsigned int size() const
+	{
+		return (this->_size);
+	}
+
+	// Setter
+
 };
-#endif //CPP_ARRAY_HPP
+
+template< typename T >
+const char	*Array<T>::InvalidIndexException::what() const throw()
+{
+	return ("Error: Invalid index");
+}

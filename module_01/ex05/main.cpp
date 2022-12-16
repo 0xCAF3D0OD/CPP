@@ -4,16 +4,6 @@
 
 #include "Harl.hpp"
 
-Karen::Karen()
-{
-	std::cout << "a Karen a appeared !! FIGHT" << std::endl;
-}
-
-Karen::~Karen()
-{
-	std::cout << "the Karen ran away !! you win" << std::endl;
-}
-
 int	manageError(int ac, std::string args)
 {
 	if (ac != 2)

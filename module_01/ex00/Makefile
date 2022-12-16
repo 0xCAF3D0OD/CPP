@@ -1,7 +1,10 @@
 NAME	= Zombie
 CPP		= g++
 CPP_FLG	= -std=c++98 -Wall -Wextra -Werror
-CPP_FIL	= Zombie.cpp
+CPP_FIL	=	Zombie.cpp\
+			randomChump.cpp\
+			newZombie.cpp\
+			main.cpp
 DEL		= rm -rf
 all: $(NAME)
 

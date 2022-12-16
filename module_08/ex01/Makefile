@@ -1,5 +1,7 @@
 SRCS_DIR	= ./
 SRCS_FILES	= 	main.cpp\
+				Span.cpp
+
 
 SRCS		:= ${patsubst %, ${SRCS_DIR}%, ${SRCS_FILES}}
 
@@ -12,10 +14,10 @@ OBJS		:= ${patsubst %, ${O_DIR}%, ${OBJS_FILES}}
 DEBUGS		:= ${patsubst %, ${D_DIR}%, ${OBJS_FILES}}
 
 
-NAME		= converter
+NAME		= Span
 
 CXX			= g++
-HXX			= whatever.hpp\
+HXX			= Span.hpp
 
 AR			= ar rcs
 MKDIR		= mkdir

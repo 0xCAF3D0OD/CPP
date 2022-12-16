@@ -1,5 +1,5 @@
 SRCS_DIR	= ./
-SRCS_FILES	= 	main.cpp\
+SRCS_FILES	= 	main.cpp
 
 
 SRCS		:= ${patsubst %, ${SRCS_DIR}%, ${SRCS_FILES}}
@@ -13,10 +13,10 @@ OBJS		:= ${patsubst %, ${O_DIR}%, ${OBJS_FILES}}
 DEBUGS		:= ${patsubst %, ${D_DIR}%, ${OBJS_FILES}}
 
 
-NAME		= Array
+NAME		= Mutant
 
 CXX			= g++
-HXX			= Array.hpp
+HXX			= MutantStack.hpp
 
 AR			= ar rcs
 MKDIR		= mkdir

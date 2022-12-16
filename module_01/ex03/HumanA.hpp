@@ -15,7 +15,9 @@ class HumanA
 
 	public:
 		HumanA(std::string name, Weapon &weapon);
+
 		void	attack();
+
 		~HumanA();
 };
 #endif //CPP_HUMANA_HPP

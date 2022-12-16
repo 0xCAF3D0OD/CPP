@@ -56,17 +56,28 @@ int	getSed(std::string filename, std::string str1, std::string str2)
 	return (0);
 }
 
-int main(int ac, char **av)
+int main(void)
 {
 	std::cout << "hello everyone !" << std::endl << std::endl;
-	if (ac <= 4)
+	int	i = -1;
+	int	count = 4;
+	std::string name;
+	std::string str1;
+	std::string str2;
+	do
 	{
 		std::cout << "you must put 3 arguments" << std::endl;
-		std::cout << "1: the name of the file" << std::endl;
-		std::cout << "2: the first string" << std::endl;
-		std::cout << "3: the second string" << std::endl;
+		std::cout << "1: the name of the file: ";
+		if (!(std::cin >> name))
+			count--;
+		std::cout << "2: the first string: ";
+		if (!(std::cin >> str1))
+			count--;
+		std::cout << "3: the second string: ";
+		if (!(std::cin >> str2))
+			count--;
 	}
-	else
-		getSed(av[1], av[2], av[3]);
+	while(count < 4 && ++i != 10);
+	getSed(name, str1, str2);
 	return (0);
 }

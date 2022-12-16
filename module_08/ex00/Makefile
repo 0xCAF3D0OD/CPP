@@ -15,14 +15,14 @@ DEBUGS		:= ${patsubst %, ${D_DIR}%, ${OBJS_FILES}}
 NAME		= converter
 
 CXX			= g++
-HXX			= whatever.hpp\
+HXX			= easyfind.hpp
 
 AR			= ar rcs
 MKDIR		= mkdir
 CP			= cp -f
 RM			= rm -f
 
-CXXFLAGS		= -std=c++98 -Wall -Wextra -Werror
+CXXFLAGS		= -std=c++98 -Wall -Wextra -Werror -g3
 
 
 all:		${NAME}

@@ -20,7 +20,9 @@ private:
 	typedef void	(Karen::* Krn)(void);
 public:
 	Karen();
+
 	void	complain(std::string level);
+
 	~Karen();
 };
 

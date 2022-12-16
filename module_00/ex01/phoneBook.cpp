@@ -71,29 +71,35 @@ void	phoneBook::displayContact(int num)
 		|| contactTab[num].getContact(2).length() > 0
 		|| contactTab[num].getContact(3).length() > 0)
 	{
-		firstName_p = contactTab[num].getContact(1);
-		name_p = contactTab[num].getContact(2);
-		nickName_p = contactTab[num].getContact(3);
+		_firstName_p = contactTab[num].getContact(1);
+		_name_p = contactTab[num].getContact(2);
+		_nickName_p = contactTab[num].getContact(3);
+		_phoneNumber = contactTab[num].getContact(4);
+		_secret = contactTab[num].getContact(5);
 
-		if (firstName_p.size() > 10)
-			firstName_p.replace(9, 20, ".");
-		if (name_p.size() > 10)
-			name_p.replace(9, 20, ".");
-		if (nickName_p.size() > 10)
-			nickName_p.replace(9, 20, ".");
-		len_M = 44;
+		if (_firstName_p.size() > 10)
+			_firstName_p.replace(9, 20, ".");
+		if (_name_p.size() > 10)
+			_name_p.replace(9, 20, ".");
+		if (_nickName_p.size() > 10)
+			_nickName_p.replace(9, 20, ".");
+		if (_phoneNumber.size() > 10)
+			_phoneNumber.replace(9, 20, ".");
+		if (_secret.size() > 10)
+			_secret.replace(9, 20, ".");
+		len_M = 66;
 		str = manage_str(len_M);
 
-		phoneBook::displaytab();
 		std::cout << "\n\n" << str << std::endl;
-		std::cout << "| " << "your index" << std::setfill(' ') << std::setw(33) << "|" << std::endl;
+		std::cout << "| " << "your index" << std::setfill(' ') << std::setw(55) << "|" << std::endl;
 		std::cout << str << std::endl;
 
 		std::cout << "|" << std::setfill(' ') << std::setw(10) << num << "|";
-		std::cout << std::setfill(' ') << std::setw(10) << firstName_p << "|";
-		std::cout << std::setfill(' ') << std::setw(10) << name_p << "|";
-		std::cout << std::setfill(' ') << std::setw(10) << nickName_p << "|\n";
-
+		std::cout << std::setfill(' ') << std::setw(10) << _firstName_p << "|";
+		std::cout << std::setfill(' ') << std::setw(10) << _name_p << "|";
+		std::cout << std::setfill(' ') << std::setw(10) << _nickName_p << "|";
+		std::cout << std::setfill(' ') << std::setw(10) << _phoneNumber << "|";
+		std::cout << std::setfill(' ') << std::setw(10) << _secret << "|\n";
 		std::cout << str << std::endl;
 	}
 	else
@@ -102,13 +108,17 @@ void	phoneBook::displayContact(int num)
 
 void	phoneBook::searchContact()
 {
+	phoneBook::displaytab();
 	std::cout << "select the indexe of the contact do you want to see\n";
 	std::cout << "insert here: ";
 	int num = 0;
 	if (!(std::cin >> num))
 		return ;
 	if (num > 8)
-		std::cout << "the indexe you searching for doesn't exist !\n";
+	{
+		std::cout << BOLD_RED << "the indexe you searching for doesn't exist !\n" << RESET;
+		exit(1);
+	}
 	phoneBook::displayContact(num);
 }
 

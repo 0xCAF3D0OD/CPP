@@ -29,24 +29,24 @@ FragTrap &FragTrap::operator=(const FragTrap &rhs)
 void	FragTrap::attack(const std::string &target)
 {
 	FragTrap otherOne(target);
-	std::cout << otherOne.getName() << " and " << FragTrap::getName() << " has: "
+	std::cout << BOLD_Y << otherOne.getName() << " and " << FragTrap::getName() << " have: "
 			  << otherOne.getEnergy() << " energy points" << std::endl;
-	std::cout << otherOne.getName() << " and " << FragTrap::getName() << " has: "
-			  << otherOne.getHitP() << " Hit points" << std::endl << std::endl;
+	std::cout << otherOne.getName() << " and " << FragTrap::getName() << " have: "
+			  << otherOne.getHitP() << " Hit points" << RESET << std::endl << std::endl;
 	if (this->getEnergy() && this->getHitP())
 	{
-		std::cout << this->getName() << " attack " << otherOne.getName() << std::endl
-				  << "he cause " << this->getDamage() << " points of damage " << std::endl << std::endl;
+		std::cout << BOLD_RED << this->getName() << " attack " << otherOne.getName() << std::endl
+				  << "he cause " << this->getDamage() << " points of damage " << RESET << std::endl << std::endl;
 		this->setEnergy(this->getEnergy() - 1);
 	}
 	otherOne.setHitPnt(this->getHitP() - this->getDamage());
-	std::cout << FragTrap::getName() << " has " << FragTrap::getEnergy() << " energy points " << std::endl;
-	std::cout << otherOne.getName() << " has yet: " << otherOne.getHitP() << " Hit points" << std::endl << std::endl ;
+	std::cout << BOLD_Y << FragTrap::getName() << " has " << FragTrap::getEnergy() << " Hit points " << std::endl;
+	std::cout << otherOne.getName() << " has yet: " << otherOne.getHitP() << " energy points" << RESET << std::endl << std::endl ;
 }
 
 void	FragTrap::highFivesGuys()
 {
-	std::cout << this->getName() << ": High five boys, skipper what is the new ?!!" << std::endl << std::endl;
+	std::cout << BOLD_G << this->getName() << ": High five boys, skipper what is the new ?!!" << RESET << std::endl << std::endl;
 }
 
 FragTrap::~FragTrap()

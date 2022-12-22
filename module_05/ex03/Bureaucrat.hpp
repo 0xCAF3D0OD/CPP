@@ -38,6 +38,7 @@ public:
 	void 		signForm(AForm *Rene);
 
 	void		executeForm(AForm const &form) const;
+
 	class	GradeTooLowException : public std::exception
 	{
 	public:
@@ -52,6 +53,11 @@ public:
 	{
 	public:
 		virtual const char *what(void) const throw();
+	};
+	class	GradeNotDigitException : public std::exception
+	{
+	public:
+		virtual const char *what() const throw();
 	};
 
 	~Bureaucrat(void);

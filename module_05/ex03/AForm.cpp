@@ -6,22 +6,27 @@
 
 const char *AForm::GradeTooLowException::what() const throw()
 {
-	return ("the number is to low\n");
+	return (BOLD_RED "\n△ For the form, the number is to low\n" RESET);
 }
 
 const char *AForm::GradeTooHighException::what() const throw()
 {
-	return ("the number is to high\n");
+	return (BOLD_RED "\n△ For the form, the number is to high\n" RESET);
 }
 
 const char *AForm::NameNotCharException::what() const throw()
 {
-	return ("the name is not a array\n");
+	return (BOLD_RED "\n△ For the form, the name is not a array\n" RESET);
+}
+
+const char *AForm::GradeNotDigitException::what() const throw()
+{
+	return (BOLD_RED "△ For the form, the grade is not a digit\n" RESET);
 }
 
 const char *AForm::NotSigned::what() const throw()
 {
-	return ("Form isn't signed\n");
+	return (BOLD_RED "\n△ Form isn't signed\n");
 
 }
 AForm::AForm(void)
@@ -30,7 +35,7 @@ _executeGrade(0),
 _signedGrade(0),
 _isSigned(false)
 {
-	std::cout << "default constructor is called" << std::endl;
+	std::cout << "◻︎ default constructor is called" << std::endl;
 }
 
 AForm::AForm(std::string const &name, int const executeGrade, int const signedGrade)
@@ -48,7 +53,7 @@ _isSigned(false)
 		if (!isalpha(_name[i]))
 			throw Bureaucrat::NameNotCharException();
 	}
-	std::cout << "initialiser constructor is called" << std::endl;
+	std::cout << "◻︎ initialiser constructor is called" << std::endl;
 }
 
 AForm::AForm(AForm const &src)
@@ -57,14 +62,14 @@ _executeGrade(src._executeGrade),
 _signedGrade(src._signedGrade),
 _isSigned(src._isSigned)
 {
-	std::cout << "copy constructor is called" << std::endl << std::endl;
+	std::cout << "◻︎ copy constructor is called" << std::endl << std::endl;
 }
 
 AForm &AForm::operator=(AForm const &rhs)
 {
 	_isSigned = rhs._isSigned;
-	std::cout << "isSigned is the only one to be initialised with operator '=' the others are const"
-	<< std::endl;
+	std::cout << BOLD_Y << "△︎ isSigned is the only one to be initialised with operator '=' the others are const"
+	<< std::endl << RESET;
 	return (*this);
 }
 
@@ -85,17 +90,17 @@ void AForm::execute(const Bureaucrat &executor) const
 	{
 		if (executor.getGrade() > this->_executeGrade)
 		{
-			std::cout << executor.getName() << BOLD_RED << " can't execute "
+			std::cout << std::endl << BOLD_RED << "△ " << executor.getName() << " can't execute "
 			<< this->_name << RESET << std::endl;
 			throw AForm::GradeTooLowException();
 		}
-		std::cout << executor.getName() << BOLD_G << " has executed "
+		std::cout << BOLD_G << "☑︎ " << executor.getName() << " has executed "
 		<< this->_name << RESET << std::endl;
 		this->executeAction();
 	}
 	else
 	{
-		std::cout << BOLD_RED << executor.getName() << " can't execute " << this->_name << RESET << std::endl;
+		std::cout << "△ " << BOLD_RED << executor.getName() << " can't execute " << this->_name << RESET << std::endl;
 		throw AForm::NotSigned();
 	}
 }
@@ -122,5 +127,5 @@ bool	AForm::getSigned() const
 
 AForm::~AForm(void)
 {
-	std::cout << "AForm destructor is called" << std::endl;
+	std::cout << "☐ AForm destructor is called" << std::endl;
 }

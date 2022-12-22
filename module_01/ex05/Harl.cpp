@@ -51,7 +51,7 @@ void	Karen::complain(std::string level)
 
 	for (int i = 0; i < 4; i++)
 	{
-		if (tabComplain[i].compare(level) == 0)
+		if (!tabComplain[i].compare(level))
 		{
 			(this->*(complain[i]))();
 			return ;

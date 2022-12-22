@@ -6,17 +6,17 @@
 
 const char *Scal_conversion::wrongConversion::what() const throw()
 {
-	return ("conversion has failed\n");
+	return (BOLD_RED "✘ conversion has failed\n" RESET);
 }
 
 const char *Scal_conversion::impossible::what() const throw()
 {
-	return ("char: no display\n");
+	return (BOLD_RED "✘ char: no display\n" RESET);
 }
 
 const char *Scal_conversion::moreThanOne::what() const throw()
 {
-	return ("you have put to much letter\n");
+	return (BOLD_RED "✘ you have put to much letter\n" RESET);
 }
 
 Scal_conversion::Scal_conversion(void)

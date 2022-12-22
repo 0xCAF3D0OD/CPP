@@ -1,5 +1,6 @@
 SRCS_DIR	= ./
-SRCS_FILES	=  main.cpp
+SRCS_FILES	=  	main.cpp\
+				Harl.cpp
 
 SRCS		:= ${patsubst %, ${SRCS_DIR}%, ${SRCS_FILES}}
 
@@ -53,7 +54,7 @@ MKDIR		= mkdir
 CP			= cp -f
 RM			= rm -f
  
-CXXFLAGS		= -Wall -Wextra -Werror # -O3# -march=native
+CXXFLAGS		= -std=c++98 -Wall -Wextra -Werror # -O3# -march=native
 
 
 all:		${NAME}

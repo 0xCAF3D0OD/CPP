@@ -10,13 +10,13 @@ ScavTrap::ScavTrap(const std::string &name)
 	this->setEnergy(50);
 	this->setDamage(20);
 
-	std::cout << "constructor ScavTrap called " << this->getName() << std::endl;
+	std::cout << "	⚬ " << "constructor ScavTrap called " << this->getName() << std::endl << std::endl;
 }
 
 ScavTrap::ScavTrap(const ScavTrap &src)
 : ClapTrap(src)
 {
-	std::cout << "constructor copy " << this->getName() << " is called." << std::endl;
+	std::cout << "	⚬ " << "constructor copy " << this->getName() << " is called." << std::endl;
 }
 
 ScavTrap &ScavTrap::operator=(const ScavTrap &rhs)
@@ -27,28 +27,30 @@ ScavTrap &ScavTrap::operator=(const ScavTrap &rhs)
 
 void	ScavTrap::attack(const std::string &target)
 {
-	ScavTrap newComer(target);
-	std::cout << newComer.getName() << " and " << ScavTrap::getName() << " has: "
-	<< newComer.getEnergy() << " energy points" << std::endl;
-	std::cout << newComer.getName() << " and " << ScavTrap::getName() << " has: "
-	<< newComer.getHitP() << " Hit points" << std::endl << std::endl;
+	std::cout << BOLD_Y << "	⚬ " << target << " has: " << ScavTrap::getEnergy() << " energy points" << std::endl;
+	std::cout << "	⚬ " << ScavTrap::getName() << " has: " << ScavTrap::getHitP() << " Hit points" << RESET << std::endl << std::endl;
 	if (this->getEnergy() && this->getHitP())
 	{
-		std::cout << this->getName() << " attack " << newComer.getName() << std::endl
-		<< "he cause " << this->getDamage() << " points of damage " << std::endl << std::endl;
+		std::cout << BOLD_RED << "	⚬ " << this->getName() << " attack " << ScavTrap::getName() << std::endl
+				<< "	⚬ " << "he cause " << this->getDamage() << " points of damage " << std::endl << std::endl;
 		this->setEnergy(this->getEnergy() - 1);
 	}
-	newComer.setHitPnt(this->getHitP() - this->getDamage());
-	std::cout << ScavTrap::getName() << " has " << ScavTrap::getEnergy() << " energy points " << std::endl;
-	std::cout << newComer.getName() << " has yet: " << newComer.getHitP() << " Hit points" << std::endl << std::endl ;
+	else
+	{
+		std::cout << BOLD_RED << "	⚬ " << target << " doesn't have enough Hit points => " << ScavTrap::getHitP() << RESET << std::endl;
+		exit(1);
+	}
+	ScavTrap::setHitPnt(this->getHitP() - this->getDamage());
+	std::cout << BOLD_Y << "	⚬ " << ScavTrap::getName() << " has " << ScavTrap::getEnergy() << " energy points " << std::endl;
+	std::cout << "	⚬ " << target << " has yet: " << ScavTrap::getHitP() << " hit points." << RESET << std::endl << std::endl ;
 }
 
 void	ScavTrap::guardGates()
 {
-	std::cout << this->getName() << ": Gate keeper mode ACTIVATED" << std::endl << std::endl;
+	std::cout << BOLD_G << "	⚬ " << this->getName() << ": Gate keeper mode ACTIVATED" << RESET << std::endl << std::endl;
 }
 
 ScavTrap::~ScavTrap()
 {
-	std::cout << "ScavTrap destructor of " << this->getName() << " Called" << std::endl;
+	std::cout << "	⚬ " << "ScavTrap destructor of " << this->getName() << " Called" << std::endl << std::endl;
 }

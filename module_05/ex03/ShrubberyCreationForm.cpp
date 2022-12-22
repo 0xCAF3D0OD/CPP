@@ -6,18 +6,18 @@
 
 const char *ShrubberyCreationForm::GradeIsFalseException::what() const throw()
 {
-	return (BOLD_RED, "wrong grade to display the beautiful tree\n");
+	return (BOLD_RED, "▲ wrong grade to display the beautiful tree\n" RESET);
 }
 
 ShrubberyCreationForm::ShrubberyCreationForm(void)
 {
-	std::cout << "constructor Shrubbery is called\n" << std::endl;
+	std::cout << "● constructor Shrubbery is called\n" << std::endl;
 }
 
 ShrubberyCreationForm::ShrubberyCreationForm(std::string const &name, int const &execGrade, int const &signGrade)
 :	AForm(name, execGrade, signGrade), _target(name)
 {
-	std::cout << "constructor presidential is called\n" << std::endl;
+	std::cout << "● constructor presidential is called\n" << std::endl;
 }
 
 void	ShrubberyCreationForm::set_Target(std::string const &name)
@@ -68,7 +68,7 @@ void ShrubberyCreationForm::executeAction() const
 ShrubberyCreationForm::ShrubberyCreationForm(ShrubberyCreationForm const &src)
 		:	AForm(src)
 {
-	std::cout << "constructor copy Shrubbery is called\n" << std::endl;
+	std::cout << "● constructor copy Shrubbery is called\n" << std::endl;
 }
 
 ShrubberyCreationForm &ShrubberyCreationForm::operator=(const ShrubberyCreationForm &rhs)
@@ -79,5 +79,5 @@ ShrubberyCreationForm &ShrubberyCreationForm::operator=(const ShrubberyCreationF
 
 ShrubberyCreationForm::~ShrubberyCreationForm(void)
 {
-	std::cout << "destructor Shrubbery is called\n" << std::endl;
+	std::cout << "● destructor Shrubbery is called\n" << std::endl;
 }

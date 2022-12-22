@@ -27,31 +27,36 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &rhs)
 void	ClapTrap::attack(const std::string &target)
 {
 	ClapTrap	JeJe(target);
-	std::cout << "JeJe has: " << JeJe._EnergyPoint << " energy points" << std::endl;
-	std::cout << "JeJe has: " << JeJe._HitPoint << " Hit points" << std::endl;
+	std::cout << BOLD_Y << "JeJe has: " << JeJe._EnergyPoint << " energy points" << std::endl;
+	std::cout << "JeJe has: " << JeJe._HitPoint << " Hit points" << RESET << std::endl;
+
 	if (JeJe._EnergyPoint && JeJe._HitPoint)
 	{
 		JeJe._HitPoint -= _AttackDamage;
 		_EnergyPoint--;
 	}
 
-	std::cout << "JeJe has: " << JeJe._HitPoint << " Hit points" << std::endl;
+	std::cout <<  BOLD_Y << "JeJe has: " << JeJe._HitPoint << " Hit points" << std::endl;
 	std::cout << "JeJe has: " << JeJe._EnergyPoint << " energy points" << std::endl;
-	std::cout << "ClapTrap has " << ClapTrap::_EnergyPoint << " energy points " << std::endl;
-	std::cout << "ClapTrap " << ClapTrap::_name << " attacks " << JeJe._name
-	<< ", causing " << ClapTrap::_AttackDamage << " points of damage." << std::endl;
+	std::cout << "ClapTrap has " << ClapTrap::_EnergyPoint << " energy points " << std::endl << std::endl;
+	std::cout << BOLD_RED << "ClapTrap " << ClapTrap::_name << " attacks " << JeJe._name
+	<< ", causing " << ClapTrap::_AttackDamage << " points of damage." << RESET << std::endl;
 }
 
 void	ClapTrap::takeDamage(unsigned int amount)
 {
 	this->_AttackDamage = amount;
-	std::cout << "ClapTrap cause " << _AttackDamage << " damages." << std::endl;
+	std::cout << BOLD_RED << "ClapTrap cause " << _AttackDamage << " damages." << RESET << std::endl;
 }
 
-void ClapTrap::beRepaired(unsigned int amount)
-{
-	this->_EnergyPoint += amount;
-	std::cout << "ClapTrap retrieve " << _EnergyPoint << " energy points." << std::endl;
+void ClapTrap::beRepaired(unsigned int amount) {
+	if (_EnergyPoint)
+	{
+		this->_EnergyPoint += amount;
+		std::cout << BOLD_G << "ClapTrap retrieve " << _EnergyPoint << " energy points." << RESET << std::endl;
+	}
+	else
+		exit(1);
 }
 
 ClapTrap::~ClapTrap()

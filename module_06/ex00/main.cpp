@@ -3,6 +3,14 @@
 //
 
 #include "scal_conversion.hpp"
+
+#define	BOLD_BLACK	"\033[1m\033[30m"
+#define BOLD_RED	"\033[1m\033[31m"
+#define BOLD_G		"\033[1m\033[32m"
+#define	RESET   	"\033[0m"
+#define BOLD_Y		"\033[1m\033[33m"
+#define BOLD_W		"\033[1m\033[37m"
+
 char	stock_char(char *str)
 {
 	char	ret;
@@ -60,35 +68,35 @@ int main(int ac, char **av)
 			if (check_if_ascii(av[1]))
 			{
 				alpha = retn->operator char();
-				std::cout << "int: " << intgr << std::endl;
+				std::cout << "◼︎ int: " << intgr << std::endl;
 				std::cout << std::setprecision(1) << std::fixed;
-				std::cout << "float: " << ret << "f" << std::endl;
-				std::cout << "double: " << dbl << std::endl;
-				std::cout << "char: " << alpha << std::endl;
+				std::cout << "◼︎ float: " << ret << "f" << std::endl;
+				std::cout << "◼︎ double: " << dbl << std::endl;
+				std::cout << "◼︎ char: " << alpha << std::endl;
 			}
 			else
 			{
-				std::cout << "int: " << intgr << std::endl;
+				std::cout << "◼︎ int:		" << intgr << std::endl;
 				std::cout << std::setprecision(1) << std::fixed;
-				std::cout << "float: " << ret << "f" << std::endl;
-				std::cout << "double: " << dbl << std::endl;
+				std::cout << "◼︎ float:	" << ret << "f" << std::endl;
+				std::cout << "◼︎ double:	" << dbl << std::endl;
 				throw Scal_conversion::impossible();
 			}
 		}
 		else
 		{
 			if (!(strcmp(av[1], "nan")))
-				std::cout << "int: impossible" << std::endl << "float: nanf" << std::endl
-				<< "double: nan" << std::endl << dbl << "char: impossible" << std::endl;
+				std::cout << BOLD_RED << "int: impossible" << std::endl << "float: nanf" << std::endl
+				<< "double: nan" << std::endl << dbl << "char: impossible" << RESET << std::endl;
 			else
 			{
 				if (strlen(av[1]) != 1)
 					throw Scal_conversion::moreThanOne();
-				std::cout << "int: " << (int(alpha)+0) << std::endl;
+				std::cout << "◼︎ int:		" << (int(alpha)+0) << std::endl;
 				std::cout << std::setprecision(1) << std::fixed;
-				std::cout << "float: " << (float(alpha)+0) << std::endl;
-				std::cout << "double: " << (double(alpha)+0) << std::endl;
-				std::cout << "char: " << alpha << std::endl;
+				std::cout << "◼︎ float:	" << (float(alpha)+0) << "f" << std::endl;
+				std::cout << "◼︎ double:	" << (double(alpha)+0) << std::endl;
+				std::cout << "◼︎ char:	" << alpha << std::endl;
 			}
 		}
 	}

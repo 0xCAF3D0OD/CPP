@@ -8,23 +8,28 @@ std::ostream	&operator<<(std::ostream &sortie, Bureaucrat const &str);
 
 const char *Bureaucrat::GradeTooLowException::what() const throw()
 {
-	return ("the number is to low\n");
+	return (BOLD_RED "\n▲︎ For the Bureaucrat, the number is to low\n" RESET);
 }
 
 const char *Bureaucrat::GradeTooHighException::what() const throw()
 {
-	return ("the number is to high\n");
+	return (BOLD_RED "\n▲ For the Bureaucrat, the number is to high\n" RESET);
 }
 
 const char *Bureaucrat::NameNotCharException::what() const throw()
 {
-	return ("the name is not a array\n");
+	return (BOLD_RED "\n▲ For the Bureaucrat, the name is not a array\n" RESET);
+}
+
+const char *Bureaucrat::GradeNotDigitException::what() const throw()
+{
+	return (BOLD_RED "▲ For the Bureaucrat, the grade is not a digit\n" RESET);
 }
 
 Bureaucrat::Bureaucrat(void)
 :	_name(""), _grade()
 {
-	std::cout << "Default constructor is called" << std::endl;
+	std::cout << "◼︎ Default constructor is called" << std::endl;
 }
 
 Bureaucrat::Bureaucrat(std::string const &name, int const &grade)
@@ -39,7 +44,7 @@ Bureaucrat::Bureaucrat(std::string const &name, int const &grade)
 		throw GradeTooHighException();
 	if (_grade > 150)
 		throw GradeTooLowException();
-	std::cout << "Default constructor is called" << std::endl;
+	std::cout << "◼︎ Default constructor is called" << std::endl;
 }
 
 Bureaucrat::Bureaucrat(const Bureaucrat &src)
@@ -77,9 +82,9 @@ std::string Bureaucrat::getName() const
 void	Bureaucrat::signForm(AForm *Rene)
 {
 	if (Rene->getSigned())
-		std::cout  <<  DARK_Y << "the formulaire is signed" << std::endl <<  std::endl << RESET;
+		std::cout << BOLD_G << "☑︎ the formulaire is signed" << std::endl << RESET;
 	else
-		std::cout << std::endl << BOLD_RED << "the formulaire couldn't be signed because "
+		std::cout << std::endl << BOLD_RED << "▲ the formulaire couldn't be signed because "
 					 "the grade is superior autorisation grade" << std::endl << std::endl << RESET;
 }
 
@@ -104,5 +109,5 @@ void Bureaucrat::executeForm(AForm const &form) const
 
 Bureaucrat::~Bureaucrat(void)
 {
-	std::cout << "Bureaucrat destructor is called" << std::endl;
+	std::cout << "◼︎ Bureaucrat destructor is called" << std::endl;
 }

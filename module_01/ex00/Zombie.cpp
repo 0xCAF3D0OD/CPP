@@ -1,7 +1,10 @@
 #include "Zombie.hpp"
 
 Zombie::Zombie(std::string name)
-: _name(name) {}
+: _name(name)
+{
+	std::cout << this->_name << " constructor is called" << std::endl;
+}
 
 void	Zombie::announce() const
 {

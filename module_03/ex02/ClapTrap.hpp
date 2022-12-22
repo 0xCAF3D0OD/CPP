@@ -9,6 +9,13 @@
 #include <string>
 #include <cctype>
 
+#define	BOLD_BLACK	"\033[1m\033[30m"
+#define BOLD_RED	"\033[1m\033[31m"
+#define BOLD_G		"\033[1m\033[32m"
+#define	RESET   	"\033[0m"
+#define BOLD_Y		"\033[1m\033[33m"
+#define BOLD_W		"\033[1m\033[37m"
+
 class	ClapTrap
 {
 private:

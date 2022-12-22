@@ -4,11 +4,10 @@
 
 #include "Cat.hpp"
 
-Cat::Cat()
-: _type("cat")
+Cat::Cat(void) : _type("cat")
 {
 	this->_brain = new Brain();
-	std::cout << this->_type <<" constructor is called" << std::endl;
+	std::cout << "⚬ 🐱 " << this->_type << " constructor is called" << std::endl;
 }
 
 Cat::Cat(const Cat &src) : AAnimal(src) {}
@@ -19,17 +18,18 @@ Cat &Cat::operator=(const Cat &rhs)
 	return (*this);
 }
 
-std::string 	Cat::getType() const
+std::string 	Cat::getType(void) const
 {
 	return (this->_type);
 }
 
-void	Cat::makeSound() const
+void	Cat::makeSound(void) const
 {
-	std::cout << getType() << "🐱:	miaou!" << std::endl;
+	std::cout << BOLD_W << "⚬ " << getType() << " 🐱:	miaou!" << std::endl;
 }
 
-Cat::~Cat()
+Cat::~Cat(void)
 {
-	std::cout << getType() << " destructor is called" << std::endl;
+	std::cout << "⚬ 🐱 " << this->_type << " destructor is called" << std::endl;
+	delete this->_brain;
 }

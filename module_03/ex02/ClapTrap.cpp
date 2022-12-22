@@ -4,10 +4,12 @@
 
 #include "ClapTrap.hpp"
 
+ClapTrap::ClapTrap() : _name("name"), _HitPoint(10), _EnergyPoint(10), _AttackDamage(0){}
+
 ClapTrap::ClapTrap(std::string const &name)
 : _name(name), _HitPoint(10), _EnergyPoint(10), _AttackDamage(0)
 {
-	std::cout << "	⚬ " << "constructor ClapTrap called " << _name << std::endl << std::endl;
+	std::cout << "⚬ constructor ClapTrap called " << _name << std::endl << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap &src)
@@ -112,5 +114,5 @@ void ClapTrap::beRepaired(unsigned int amount)
 
 ClapTrap::~ClapTrap()
 {
-	std::cout << "	⚬ " << "ClapTrap " << _name << " destructor called" << std::endl;
+	std::cout << "⚬ ClapTrap destructor of " << _name << " called" << std::endl;
 }

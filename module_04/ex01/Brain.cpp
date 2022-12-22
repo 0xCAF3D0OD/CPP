@@ -4,9 +4,9 @@
 
 #include "Brain.hpp"
 
-Brain::Brain()
+Brain::Brain(void)
 {
-	std::cout <<"brain constructor is called" << std::endl;
+	std::cout << "⚬ 🧠 constructor is called" << std::endl;
 }
 
 Brain::Brain(const Brain &src) : Animal(src) {}
@@ -18,12 +18,7 @@ Brain &Brain::operator=(const Brain &rhs)
 	return (*this);
 }
 
-void	Brain::makeSound() const
+Brain::~Brain(void)
 {
-	std::cout << getType() << "🐱:	miaou!" << std::endl;
-}
-
-Brain::~Brain()
-{
-	std::cout << "Brain destructor is called" << std::endl;
+	std::cout << "⚬ 🧠 destructor is called" << std::endl;
 }

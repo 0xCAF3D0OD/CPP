@@ -68,16 +68,16 @@ int main(int ac, char **av)
 			if (check_if_ascii(av[1]))
 			{
 				alpha = retn->operator char();
-				std::cout << "◼︎ int: " << intgr << std::endl;
-				std::cout << std::setprecision(1) << std::fixed;
-				std::cout << "◼︎ float: " << ret << "f" << std::endl;
-				std::cout << "◼︎ double: " << dbl << std::endl;
-				std::cout << "◼︎ char: " << alpha << std::endl;
+				std::cout << "◼︎ int:		" << intgr << std::endl;
+				std::cout << std::setprecision(5) << std::fixed;
+				std::cout << "◼︎ float:	" << ret << "f" << std::endl;
+				std::cout << "◼︎ double:	" << dbl << std::endl;
+				std::cout << "◼︎ char:		" << alpha << std::endl;
 			}
 			else
 			{
 				std::cout << "◼︎ int:		" << intgr << std::endl;
-				std::cout << std::setprecision(1) << std::fixed;
+				std::cout << std::setprecision(5) << std::fixed;
 				std::cout << "◼︎ float:	" << ret << "f" << std::endl;
 				std::cout << "◼︎ double:	" << dbl << std::endl;
 				throw Scal_conversion::impossible();
@@ -93,10 +93,10 @@ int main(int ac, char **av)
 				if (strlen(av[1]) != 1)
 					throw Scal_conversion::moreThanOne();
 				std::cout << "◼︎ int:		" << (int(alpha)+0) << std::endl;
-				std::cout << std::setprecision(1) << std::fixed;
+				std::cout << std::setprecision(5) << std::fixed;
 				std::cout << "◼︎ float:	" << (float(alpha)+0) << "f" << std::endl;
 				std::cout << "◼︎ double:	" << (double(alpha)+0) << std::endl;
-				std::cout << "◼︎ char:	" << alpha << std::endl;
+				std::cout << "◼︎ char:		" << alpha << std::endl;
 			}
 		}
 	}

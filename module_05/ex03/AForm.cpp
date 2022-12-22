@@ -29,6 +29,7 @@ const char *AForm::NotSigned::what() const throw()
 	return (BOLD_RED "\n△ Form isn't signed\n");
 
 }
+
 AForm::AForm(void)
 : _name(""),
 _executeGrade(0),

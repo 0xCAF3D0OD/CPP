@@ -4,21 +4,6 @@
 
 #include "Data.hpp"
 
-//const char *Data::wrongConversion::what() const throw()
-//{
-//	return ("conversion has failed\n");
-//}
-//
-//const char *Data::impossible::what() const throw()
-//{
-//	return ("char: no display\n");
-//}
-//
-//const char *Data::moreThanOne::what() const throw()
-//{
-//	return ("you have put to much letter\n");
-//}
-
 Data::Data(void)
 :	_i(0), _flt(0.0)
 {

@@ -6,7 +6,7 @@
 
 AAnimal::AAnimal()
 {
-	std::cout << "AAnimal constructor is called" << std::endl;
+	std::cout << "⚬ 🦄: constructor is called" << std::endl;
 }
 
 AAnimal::AAnimal(const AAnimal &src)
@@ -34,5 +34,5 @@ std::string AAnimal::getType() const
 
 AAnimal::~AAnimal()
 {
-	std::cout << "Animal destructor is called" << std::endl;
+	std::cout << "⚬ 🦄: " << this->_type << " destructor is called" << std::endl;
 }

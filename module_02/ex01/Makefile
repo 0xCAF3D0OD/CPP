@@ -54,7 +54,7 @@ MKDIR		= mkdir
 CP			= cp -f
 RM			= rm -f
 
-CXXFLAGS		= -Wall -Wextra -Werror # -O3# -march=native
+CXXFLAGS		= -std=c++98 -Wall -Wextra -Werror # -O3# -march=native
 
 
 all:		${NAME}

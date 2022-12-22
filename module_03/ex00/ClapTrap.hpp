@@ -14,6 +14,7 @@
 #define BOLD_G		"\033[1m\033[32m"
 #define	RESET   	"\033[0m"
 #define BOLD_Y		"\033[1m\033[33m"
+#define BOLD_W		"\033[1m\033[37m"
 
 class	ClapTrap
 {
@@ -24,10 +25,11 @@ private:
 	int	_AttackDamage;
 
 public:
+	ClapTrap(void);
 	ClapTrap(std::string const &name);
 	ClapTrap(ClapTrap const &src);
 
-	ClapTrap &operator=(ClapTrap const &rhs);
+	ClapTrap &operator=(const ClapTrap &rhs);
 
 	std::string &getName(void);
 	int	&getEnergie(void);

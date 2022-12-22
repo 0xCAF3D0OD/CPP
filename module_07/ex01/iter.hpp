@@ -34,4 +34,30 @@ void Iter (T *tab, std::size_t tab_size, void (*function)(T&)) {
 		function(tab[i]);
 }
 
+class	wrongInputException : public std::exception
+{
+public:
+	virtual const char *what() const throw()
+	{
+		return (BOLD_RED "\n✘ The input is not int or char\n" RESET);
+	}
+};
+
+class	inputNotDigitException : public std::exception
+{
+public:
+	virtual const char *what() const throw()
+	{
+		return (BOLD_RED "\n✘ The input is not a digit or is equal to 0\n" RESET);
+	}
+};
+
+class	inputNotCharException : public std::exception
+{
+public:
+	virtual const char *what() const throw()
+	{
+		return (BOLD_RED "\n✘ The input is not a character or is equal to NULL\n" RESET);
+	}
+};
 #endif //CPP_ITER_HPP

@@ -7,18 +7,18 @@
 
 #include "Amateria.hpp"
 
-class	cure
+class	Cure
 {
 private:
 	std::string clon;
 public:
-	cure(void);
-	cure(cure const &src);
+	Cure(void);
+	Cure(Cure const &src);
 
-	cure	&operator=(cure const &rhs);
+	Cure		&operator=(Cure const &rhs);
 	std::string	clone(void);
 	ICharacter	use(ICharacter const &str);
 
-	~cure(void);
+	~Cure(void);
 };
 #endif //CPP_CURE_H

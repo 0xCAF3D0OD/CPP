@@ -67,24 +67,15 @@ public:
 		}
 		return (this->_array[index]);
 	}
-
-	// Exception
-
 	class	InvalidIndexException : public std::exception
 	{
 	public:
 		virtual const char	*what() const throw();
 	};
-	// Public Methods
-
-	// Getter
 	unsigned int size() const
 	{
 		return (this->_size);
 	}
-
-	// Setter
-
 };
 
 template< typename T >

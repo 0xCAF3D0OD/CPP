@@ -121,12 +121,12 @@ Fixed	Fixed::operator+(const Fixed &rhs) const
 //	2ème variante => return (Fixed(this->_rawBits + rhs.getRawBits()));
 }
 
-Fixed	Fixed::operator++(void)
+Fixed	&Fixed::operator++(void)
 {
 //	std::cout << "assignation operator '++' called from =>	" << this->_rawBits
 //	<< std::endl;
 	++(this->_rawBits);
-	return (this->_rawBits);
+	return (*this);
 }
 
 Fixed	Fixed::operator++(int)
@@ -147,6 +147,20 @@ Fixed	Fixed::operator-(const Fixed &rhs) const
 //			  << " and " << rhs.getRawBits() << std::endl;
 	return (neg);
 //	2ème variante => return (Fixed(this->_rawBits - rhs.getRawBits()));
+}
+
+Fixed	&Fixed::operator--(void)
+{
+	this->_rawBits--;
+	return (*this);
+}
+
+Fixed	Fixed::operator--(int)
+{
+	Fixed	old(*this);
+
+	--(*this);
+	return (old);
 }
 
 //the result must be in point number so the function toFloat must be use if I use rawBits variable the result is false.

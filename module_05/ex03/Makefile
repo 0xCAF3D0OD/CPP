@@ -1,11 +1,12 @@
 SRCS_DIR	= ./
-SRCS_FILES	= 	main.cpp\
-				ShrubberyCreationForm.cpp\
+SRCS_FILES	= 	AForm.cpp\
+				Bureaucrat.cpp\
+				Intern.cpp\
+				main.cpp\
 				RobotomyRequestForm.cpp\
 				PresidentialPardonForm.cpp\
-				Bureaucrat.cpp\
-				AForm.cpp\
-				Intern.cpp
+				ShrubberyCreationForm.cpp
+
 
 SRCS		:= ${patsubst %, ${SRCS_DIR}%, ${SRCS_FILES}}
 
@@ -21,12 +22,11 @@ DEBUGS		:= ${patsubst %, ${D_DIR}%, ${OBJS_FILES}}
 NAME		= bureaucrat
 
 CXX			= g++
-HXX			=  Bureaucrat.hpp\
-               AForm.hpp\
-               ShrubberyCreationForm.hpp\
+HXX			=  AForm.hpp\
+			   Bureaucrat.hpp\
+			   Intern.hpp\
                RobotomyRequestForm.hpp\
-               Intern.hpp
-
+               ShrubberyCreationForm.hpp
 
 AR			= ar rcs
 MKDIR		= mkdir

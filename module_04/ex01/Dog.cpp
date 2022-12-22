@@ -4,11 +4,11 @@
 
 #include "Dog.hpp"
 
-Dog::Dog()
+Dog::Dog(void)
 : _type("Dog")
 {
 	this->_brain = new Brain();
-	std::cout << this->_type <<" constructor is called" << std::endl;
+	std::cout << "⚬ 🐶 " << this->_type <<" constructor is called" << std::endl;
 }
 
 Dog::Dog(const Dog &src) : Animal(src) {}
@@ -19,17 +19,18 @@ Dog &Dog::operator=(const Dog &rhs)
 	return (*this);
 }
 
-std::string 	Dog::getType() const
+std::string 	Dog::getType(void) const
 {
 	return (this->_type);
 }
 
-void	Dog::makeSound() const
+void	Dog::makeSound(void) const
 {
-	std::cout << getType() << " 🐶:	Wooouuuuuuf !" << std::endl;
+	std::cout << BOLD_W << "⚬ " << getType() << " 🐶:	Wooouuuuuuf !" << std::endl;
 }
 
-Dog::~Dog()
+Dog::~Dog(void)
 {
-	std::cout << getType() << " destructor is called" << std::endl;
+	std::cout << "⚬ 🐶 " << this->_type << " destructor is called" << std::endl;
+	delete this->_brain;
 }

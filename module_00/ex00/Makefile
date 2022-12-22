@@ -1,5 +1,5 @@
 SRCS_DIR	= ./
-SRCS_FILES	= 	megaphone.cpp
+SRCS_FILES	= megaphone.cpp
 
 SRCS		:= ${patsubst %, ${SRCS_DIR}%, ${SRCS_FILES}}
 
@@ -47,13 +47,13 @@ NAME		= megaphone
 #endif
 
 CXX			= g++
-HXX			= fixed.hpp
+#HXX			= fixed.hpp
 AR			= ar rcs
 MKDIR		= mkdir
 CP			= cp -f
 RM			= rm -f
 
-CXXFLAGS		= -Wall -Wextra -Werror # -O3# -march=native
+CXXFLAGS		= -std=c++98 -Wall -Wextra -Werror -g3# -O3# -march=native
 
 
 all:		${NAME}

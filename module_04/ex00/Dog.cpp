@@ -7,7 +7,7 @@
 Dog::Dog()
 : _type("Dog")
 {
-	std::cout << this->_type <<" constructor is called" << std::endl;
+	std::cout << "⚬ " << this->_type <<" constructor is called" << std::endl;
 }
 
 Dog::Dog(const Dog &src) : Animal(src) {}
@@ -25,10 +25,10 @@ std::string 	Dog::getType() const
 
 void	Dog::makeSound() const
 {
-	std::cout << getType() << " 🐶:	Wooouuuuuuf !" << std::endl;
+	std::cout << BOLD_W << "⚬ " << getType() << " 🐶:	Wooouuuuuuf !" << std::endl;
 }
 
 Dog::~Dog()
 {
-	std::cout << getType() << " destructor is called" << std::endl;
+	std::cout << "⚬ " << this->_type << " destructor is called" << std::endl;
 }

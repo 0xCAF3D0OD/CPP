@@ -2,5 +2,31 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cpp00" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cpp00/test1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cpp00/test2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cpp00/test3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_00/cpp00" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_00/cpp00/test3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_01/cpp01" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_01/test1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_02/cpp02" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_02/cpp02/test1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_03/cpp03" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_03/cpp03/test1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_04/cpp04" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_04/cpp04/test1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_05/cpp05" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_05/cpp05/test1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_05/cpp05/test3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_05/cpp05/test4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_06/cpp06" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_06/cpp06/test1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_07/cpp07" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_07/cpp07/test1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_07/cpp07/test2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_07/cpp07/test4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_07/cpp07/test5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_07/ex00/cpp07" vcs="Git" />
   </component>
 </project>

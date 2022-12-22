@@ -3,6 +3,8 @@
 //
 #include "ScavTrap.hpp"
 
+ScavTrap::ScavTrap() : ClapTrap("name"){}
+
 ScavTrap::ScavTrap(const std::string &name)
 : ClapTrap(name)
 {
@@ -10,13 +12,13 @@ ScavTrap::ScavTrap(const std::string &name)
 	this->setEnergy(50);
 	this->setDamage(20);
 
-	std::cout << "	⚬ " << "constructor ScavTrap called " << this->getName() << std::endl << std::endl;
+	std::cout << "⚬ " << "constructor ScavTrap called " << this->getName() << std::endl << std::endl;
 }
 
 ScavTrap::ScavTrap(const ScavTrap &src)
 : ClapTrap(src)
 {
-	std::cout << "	⚬ " << "constructor copy " << this->getName() << " is called." << std::endl;
+	std::cout << "⚬ " << "constructor copy " << this->getName() << " is called." << std::endl;
 }
 
 ScavTrap &ScavTrap::operator=(const ScavTrap &rhs)
@@ -45,6 +47,11 @@ void	ScavTrap::attack(const std::string &target)
 	std::cout << "	⚬ " << target << " has yet: " << ScavTrap::getHitP() << " hit points." << RESET << std::endl << std::endl ;
 }
 
+void	ScavTrap::takeDamage(unsigned int amount)
+{
+	ScavTrap::setDamage(amount);
+}
+
 void	ScavTrap::guardGates()
 {
 	std::cout << BOLD_G << "	⚬ " << this->getName() << ": Gate keeper mode ACTIVATED" << RESET << std::endl << std::endl;
@@ -52,5 +59,5 @@ void	ScavTrap::guardGates()
 
 ScavTrap::~ScavTrap()
 {
-	std::cout << "	⚬ " << "ScavTrap destructor of " << this->getName() << " Called" << std::endl << std::endl;
+	std::cout << "⚬ " << "ScavTrap destructor of " << this->getName() << " Called" << std::endl << std::endl;
 }

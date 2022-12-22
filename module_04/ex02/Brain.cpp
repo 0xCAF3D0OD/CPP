@@ -6,7 +6,7 @@
 
 Brain::Brain()
 {
-	std::cout <<"brain constructor is called" << std::endl;
+	std::cout <<"⚬ 🧠: constructor is called" << std::endl;
 }
 
 Brain::Brain(const Brain &src) : AAnimal(src) {}
@@ -25,5 +25,5 @@ void	Brain::makeSound() const
 
 Brain::~Brain()
 {
-	std::cout << "Brain destructor is called" << std::endl;
+	std::cout <<"⚬ 🧠: destructor is called" << std::endl;
 }

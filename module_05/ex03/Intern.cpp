@@ -5,12 +5,12 @@
 
 Intern::Intern(void)
 {
-	std::cout << "constructor intern is called" << std::endl;
+	std::cout << "❍ constructor intern is called" << std::endl;
 }
 
 Intern::Intern(const Intern &src)
 {
-	std::cout << "[Intern] copied from another object" << std::endl;
+	std::cout << "❍ [Intern] copied from another object" << std::endl;
 	*this = src;
 }
 
@@ -41,9 +41,9 @@ AForm	*Intern::makeForm(std::string const &formName, std::string const &formTarg
 	}
 
 	if (ret != NULL)
-		std::cout << "Intern creates " << formName << std::endl;
+		std::cout << BOLD_G << "☑︎ Intern creates " << formName <<  RESET << std::endl;
 	else
-		std::cout << "Intern fails to create " << formName << std::endl;
+		std::cout << BOLD_RED << "☒ Intern fails to create " << formName <<  RESET << std::endl;
 
 	return (ret);
 }
@@ -56,5 +56,5 @@ AForm	*Intern::makeForm(std::string const &formName, std::string const &formTarg
 
 Intern::~Intern()
 {
-	std::cout << "Intern Destructor is called." << std::endl;
+	std::cout << "❍ Intern Destructor is called." << std::endl;
 }

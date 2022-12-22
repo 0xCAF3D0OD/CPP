@@ -4,10 +4,12 @@
 
 #include "ClapTrap.hpp"
 
+ClapTrap::ClapTrap() : _name("name"), _HitPoint(10), _EnergyPoint(10), _AttackDamage(0){}
+
 ClapTrap::ClapTrap(std::string const &name)
 : _name(name), _HitPoint(10), _EnergyPoint(10), _AttackDamage(0)
 {
-	std::cout << "constructor ClapTrap called " << _name << std::endl << std::endl;
+	std::cout << "⚬ constructor ClapTrap called " << _name << std::endl << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap &src)
@@ -72,18 +74,22 @@ void	ClapTrap::setEnergy(int energy)
 
 void	ClapTrap::attack(const std::string &target)
 {
-	ClapTrap	JeJe(target);
-	std::cout << JeJe.getName() << " and " << ClapTrap::getName() << " has: " << JeJe.getEnergy() << " energy points" << std::endl;
-	std::cout << JeJe.getName() << " and " << ClapTrap::getName() << " has: " << JeJe.getHitP() << " Hit points" << std::endl << std::endl;
+	std::cout << BOLD_Y << "	⚬ " << target << " has: " << ClapTrap::getEnergy() << " energy points" << std::endl;
+	std::cout << "	⚬ " << ClapTrap::getName() << " has: " << ClapTrap::getHitP() << " Hit points" << RESET << std::endl << std::endl;
 	if (this->getEnergy() && this->getHitP())
 	{
-		std::cout << this->getName() << " attack " << JeJe.getName() << std::endl
-				  << "he cause " << this->getDamage() << " points of damage " << std::endl << std::endl;
+		std::cout << BOLD_RED << "	⚬ " << this->getName() << " attack " << target << std::endl
+				<< "	⚬ " << "he cause " << this->getDamage() << " points of damage " << std::endl << std::endl;
 		this->setEnergy(this->getEnergy() - 1);
 	}
-	JeJe.setHitPnt(this->getHitP() - this->getDamage());
-	std::cout << ClapTrap::getName() << " has " << ClapTrap::getEnergy() << " energy points " << std::endl;
-	std::cout << JeJe.getName() << " has yet: " << JeJe.getHitP() << " Hit points" << std::endl << std::endl ;
+	else
+	{
+		std::cout << BOLD_RED << "	⚬ " << target << " doesn't have enough Hit points => " << _HitPoint << RESET << std::endl;
+		exit(1);
+	}
+	ClapTrap::setHitPnt(this->getHitP() - this->getDamage());
+	std::cout << BOLD_Y << "	⚬ " << ClapTrap::getName() << " has " << ClapTrap::getEnergy() << " energy points " << std::endl;
+	std::cout << "	⚬ " << target << " has yet: " << ClapTrap::getHitP() << " hit points." << RESET << std::endl << std::endl ;
 }
 
 void	ClapTrap::takeDamage(unsigned int amount)
@@ -93,11 +99,20 @@ void	ClapTrap::takeDamage(unsigned int amount)
 
 void ClapTrap::beRepaired(unsigned int amount)
 {
-	this->_EnergyPoint += amount;
-	std::cout << "ClapTrap retrieve " << _EnergyPoint << " energy points." << std::endl << std::endl;
+	if (_EnergyPoint)
+	{
+		this->_EnergyPoint += amount;
+		std::cout << BOLD_G << "	⚬ " << "ClapTrap retrieve " << amount << " points. He has yet "
+				  << _EnergyPoint << " energy points." << RESET << std::endl;
+	}
+	else
+	{
+		std::cout << BOLD_RED << "	⚬ " << _name << " doesn't have enough points => " << amount << RESET << std::endl;
+		exit(1);
+	}
 }
 
 ClapTrap::~ClapTrap()
 {
-	std::cout << "ClapTrap destructor called" << std::endl;
+	std::cout << "⚬ ClapTrap " << _name << " destructor called" << std::endl;
 }

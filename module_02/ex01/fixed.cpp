@@ -48,7 +48,7 @@ float Fixed::toFloat() const
 
 int Fixed::toInt() const
 {
-	return(this->_rawBits >> Fixed::_fractBits);
+	return (this->_rawBits >> Fixed::_fractBits);
 }
 
 std::ostream &operator<<(std::ostream &sortie, const Fixed &rhs)

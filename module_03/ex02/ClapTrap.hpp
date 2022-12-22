@@ -25,6 +25,7 @@ private:
 	int	_AttackDamage;
 
 public:
+	ClapTrap(void);
 	ClapTrap(std::string const &name);
 	ClapTrap(ClapTrap const &src);
 
@@ -45,6 +46,6 @@ public:
 	void	setEnergy(int Nrj);
 
 
-	~ClapTrap();
+	virtual ~ClapTrap();
 };
 #endif //CPP_CLAPTRAP_HPP

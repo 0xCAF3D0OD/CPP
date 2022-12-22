@@ -17,7 +17,6 @@ public:
 
 	Brain	&operator=(Brain const &rhs);
 	std::string	getidea(void) const;
-	void		makeSound(void) const;
 
 	~Brain(void);
 };

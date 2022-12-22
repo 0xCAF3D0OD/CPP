@@ -4,41 +4,23 @@
 #include <iostream>
 #include <string.h>
 
-class	LessArguments : public std::exception
-{
-public:
-	virtual const char *what(void) const throw();
-};
-
 class	voidArguments : public std::exception
 {
 public:
 	virtual const char *what(void) const throw();
 };
 
-const char *LessArguments::what() const throw()
-{
-	return ("it must be two arguments\n");
-}
-
 const char *voidArguments::what() const throw()
 {
-	return ("it can't be void\n");
+	return ("* LOUD AND UNBEARABLE FEEDBACK NOISE *");
 }
 
-int manage_error(int ac, char **av)
+int manage_error(int ac)
 {
 	try
 	{
-		if (ac != 2)
-			throw LessArguments();
-		if (!av[1] || !av[0])
+		if (ac == 1)
 			throw voidArguments();
-	}
-	catch (LessArguments &exe)
-	{
-		std::cerr << exe.what() << std::endl;
-		return (1);
 	}
 	catch (voidArguments &exe)
 	{
@@ -50,19 +32,20 @@ int manage_error(int ac, char **av)
 
 int main(int ac, char **av)
 {
-	LessArguments	error;
 	std::string 	args;
-	int 			i;
 
-	if (!manage_error(ac, av))
-		args = av[1];
-	i = -1;
-	while (args[++i])
+	if (!manage_error(ac)){}
+
+	for (int i = 1; i < ac; i++)
 	{
-		if (strcmp(&args[i], "\n"))
-			std::cout << (char) toupper(args[i]);
-		else if (!strcmp(&args[i], "\n"))
-			std::cout << std::endl;
+		for (int j = 0; j < (int)strlen(av[i]); j++) {
+
+			if (!strcmp(&args[i], "\n"))
+				std::cout << std::endl;
+			std::cout << (char) toupper(av[i][j]);
+		}
+		if (av[i + 1] != NULL)
+			std::cout << " ";
 	}
 	return (0);
 }

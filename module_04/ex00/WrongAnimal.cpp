@@ -6,7 +6,7 @@
 WrongAnimal::WrongAnimal()
 :	_type("WrongAnimal")
 {
-	std::cout << getType() << " constructor is called" << std::endl;
+	std::cout << "⚬ " << this->_type << " constructor is called" << std::endl;
 }
 
 WrongAnimal::WrongAnimal(const WrongAnimal &src)
@@ -27,11 +27,11 @@ std::string WrongAnimal::getType() const
 
 void	WrongAnimal::makeSound() const
 {
-	std::cout << this->_type << " 🦄: is a animal ?!! we don't know what sound he make"
-			  << std::endl << std::endl;
+	std::cout << BOLD_W << "⚬ " << getType() << " 🦄: is a animal ?!! we don't know what sound he make"
+			  << RESET << std::endl << std::endl;
 }
 
 WrongAnimal::~WrongAnimal()
 {
-	std::cout << getType() << " destructor is called" << std::endl;
+	std::cout << "⚬ " << this->_type << " destructor is called" << std::endl;
 }

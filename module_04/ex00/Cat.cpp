@@ -7,7 +7,7 @@
 Cat::Cat()
 : _type("cat")
 {
-	std::cout << this->_type <<" constructor is called" << std::endl;
+	std::cout << "⚬ " << this->_type <<" constructor is called" << std::endl;
 }
 
 Cat::Cat(const Cat &src) : Animal(src) {}
@@ -25,10 +25,10 @@ std::string 	Cat::getType() const
 
 void	Cat::makeSound() const
 {
-	std::cout << getType() << " 🐱:	miaou!" << std::endl;
+	std::cout << BOLD_W << "⚬ " << getType() << " 🐱:	miaou!" << std::endl;
 }
 
 Cat::~Cat()
 {
-	std::cout << getType() << " destructor is called" << std::endl;
+	std::cout << "⚬ " << this->_type << " destructor is called" << std::endl;
 }

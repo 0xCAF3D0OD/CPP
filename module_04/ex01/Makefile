@@ -2,7 +2,8 @@ SRCS_DIR	= ./
 SRCS_FILES	= 	main.cpp\
 				Animal.cpp\
 				Dog.cpp\
-				Cat.cpp
+				Cat.cpp\
+				Brain.cpp
 
 
 SRCS		:= ${patsubst %, ${SRCS_DIR}%, ${SRCS_FILES}}
@@ -22,6 +23,7 @@ CXX			= g++
 HXX			= Animal.hpp\
 			  Dog.hpp\
 			  Cat.hpp\
+			  Brain.hpp
 
 AR			= ar rcs
 MKDIR		= mkdir

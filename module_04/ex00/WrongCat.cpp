@@ -7,7 +7,7 @@
 WrongCat::WrongCat()
 : _type("WrongCat")
 {
-	std::cout << this->_type <<" constructor is called" << std::endl;
+	std::cout << "⚬ " << this->_type <<" constructor is called" << std::endl;
 }
 
 WrongCat::WrongCat(const WrongCat &src) : WrongAnimal(src) {}
@@ -31,5 +31,5 @@ void	WrongCat::makeSound() const
 
 WrongCat::~WrongCat()
 {
-	std::cout << this->_type << " destructor is called" << std::endl;
+	std::cout << "⚬ " << this->_type << " destructor is called" << std::endl;
 }

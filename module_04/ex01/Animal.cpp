@@ -6,7 +6,7 @@
 
 Animal::Animal()
 {
-	std::cout << "Animal constructor is called" << std::endl;
+	std::cout << "⚬ 🦄 " << this->_type <<" constructor is called" << std::endl;
 }
 
 Animal::Animal(const Animal &src)
@@ -27,11 +27,11 @@ std::string Animal::getType() const
 
 void	Animal::makeSound() const
 {
-	std::cout << getType() << "🦄:	is a animal ?!! we don't know what sound he make"
-	<< std::endl << std::endl;
+	std::cout << BOLD_W << "⚬ " << _type << " 🦄: is a animal ?!! we don't know what sound he make" << RESET
+			  << std::endl << std::endl;
 }
 
 Animal::~Animal()
 {
-	std::cout << "Animal destructor is called" << std::endl;
+	std::cout << "⚬ 🦄" << this->_type << " destructor is called" << std::endl << std::endl;
 }

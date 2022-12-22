@@ -8,8 +8,13 @@
 #include <iostream>
 #include <string>
 #include <cctype>
-#include "ScavTrap.hpp"
-#include "F"
+
+#define	BOLD_BLACK	"\033[1m\033[30m"
+#define BOLD_RED	"\033[1m\033[31m"
+#define BOLD_G		"\033[1m\033[32m"
+#define	RESET   	"\033[0m"
+#define BOLD_Y		"\033[1m\033[33m"
+#define BOLD_W		"\033[1m\033[37m"
 
 class	ClapTrap
 {
@@ -20,6 +25,7 @@ private:
 	int	_AttackDamage;
 
 public:
+	ClapTrap(void);
 	ClapTrap(std::string const &name);
 	ClapTrap(ClapTrap const &src);
 
@@ -40,6 +46,6 @@ public:
 	void	setEnergy(int Nrj);
 
 
-	~ClapTrap();
+	virtual ~ClapTrap();
 };
 #endif //CPP_CLAPTRAP_HPP

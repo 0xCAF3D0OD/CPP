@@ -15,7 +15,7 @@ public:
 	ice(void);
 	ice(ice const &src);
 
-	ice	&operator=(ice const &rhs);
+	ice					&operator=(ice const &rhs);
 	virtual std::string getClone(void) const;
 
 	virtual ~ice(void);

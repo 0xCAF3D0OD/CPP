@@ -8,7 +8,7 @@ std::ostream	&operator<<(std::ostream &sortie, Bureaucrat const &str);
 
 Bureaucrat::Bureaucrat()
 {
-	std::cout << this->getName() << "constructor is called" << std::endl;
+	std::cout << "⚀ "<< this->getName() << " constructor is called" << std::endl;
 }
 
 Bureaucrat::Bureaucrat(const Bureaucrat &src)
@@ -52,20 +52,20 @@ std::ostream	&operator<<(std::ostream &sortie, Bureaucrat &str)
 
 const char *Bureaucrat::GradeTooLowException::what() const throw()
 {
-	return ("the number is to low\n");
+	return (BOLD_RED "\n⚬ the number is to low\n");
 }
 
 const char *Bureaucrat::GradeTooHighException::what() const throw()
 {
-	return ("the number is to high\n");
+	return (BOLD_RED "\n⚬ the number is to high\n");
 }
 
 const char *Bureaucrat::NameNotCharException::what() const throw()
 {
-	return ("the name is not a array\n");
+	return (BOLD_RED "\n⚬ the name is not a array\n");
 }
 
 Bureaucrat::~Bureaucrat()
 {
-	std::cout << "destructor is called" << std::endl;
+	std::cout  << RESET << "⚀ "<< "destructor is called" << std::endl;
 }

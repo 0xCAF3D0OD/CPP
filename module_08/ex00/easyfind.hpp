@@ -14,7 +14,25 @@
 #include <stack>
 #include <algorithm>
 
+#define	BOLD_BLACK	"\033[1m\033[30m"
+#define BOLD_RED	"\033[1m\033[31m"
+#define BOLD_G		"\033[1m\033[32m"
+#define	RESET   	"\033[0m"
+#define BOLD_Y		"\033[1m\033[33m"
+#include <algorithm>
+
+//template<typename T>
+//typename T::iterator	easyfind( T &container, int goal )
+//{
+//	typename T::iterator	result = find(container.begin(), container.end(), goal);
+//
+//	if (result == container.end())
+//		return container.end();
+//	return result;
+//}
+
 template <typename T>
+
 int	easyfind(T arg1, int arg2)
 {
 	typename T::iterator ret;

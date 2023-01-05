@@ -3,25 +3,26 @@
 
 const char *noOccurence::what() const throw()
 {
-	return ("no occurrence found\n");
+	return (BOLD_RED "\n✘ no occurrence found\n" RESET);
 }
 
 const char *wrongArgs::what() const throw()
 {
-	return ("Less args\n");
+	return (BOLD_RED "\n✘ Less args -> please put minimum 2 digits\n" RESET);
 }
 
 const char *occurence::what() const throw()
 {
-	return ("bravo you found the occurrence\n");
+	return (BOLD_G "\n✔︎ bravo you found the occurrence\n" RESET);
 }
 
 int main (int ac, char **av)
 {
 	std::vector<int>p;
+
 	try
 	{
-		if (!ac)
+		if (ac < 2)
 			throw wrongArgs();
 		int len = ac;
 		int	input = 0;
@@ -36,12 +37,32 @@ int main (int ac, char **av)
 			else
 				throw occurence();
 		}
-
 	}
 	catch(const std::exception& e)
 	{
 		std::cerr << e.what() << '\n';
 	}
-	std::cout << "Les pommes de terre c racist\n";
 	return (0);
 }
+//template <typename T>
+//void	displayIterator( T it, T end )
+//{
+//	if (it != end)
+//		std::cout << "iterator: " << *it << std::endl;
+//	else
+//		std::cout << "iterator reached the end of container" << std::endl;
+//}
+//
+//int	main( void )
+//{
+//	std::vector<int>			vect;
+//	std::vector<int>::iterator	it;
+//
+//	for (int i = 1; i < 59; i += 2)
+//		vect.push_back(i);
+//	it = easyfind(vect, 43);
+//	displayIterator(it, vect.end());
+//	it = easyfind(vect, 42);
+//	displayIterator(it, vect.end());
+//	return (0);
+//}

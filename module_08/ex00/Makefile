@@ -12,7 +12,7 @@ OBJS		:= ${patsubst %, ${O_DIR}%, ${OBJS_FILES}}
 DEBUGS		:= ${patsubst %, ${D_DIR}%, ${OBJS_FILES}}
 
 
-NAME		= converter
+NAME		= easyfind
 
 CXX			= g++
 HXX			= easyfind.hpp

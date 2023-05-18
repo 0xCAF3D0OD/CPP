@@ -12,7 +12,7 @@
 
 
 
-# les héritages what that ?!!!
+# Inheritance what that ?!!!
 
 * **advantage** 
   

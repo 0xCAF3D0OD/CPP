@@ -1,6 +1,3 @@
-//
-// Created by dino on 27.09.22.
-//
 #include <iostream>
 #include <string.h>
 
@@ -49,3 +46,5 @@ int main(int ac, char **av)
 	}
 	return (0);
 }
+
+// rm .git

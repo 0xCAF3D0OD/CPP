@@ -27,10 +27,14 @@ public:
 
 	T Max(void)
 	{
+		if (_x == _y)
+			return (_y);
 		return (_x >= _y ? _x : _y);
 	}
 	T Min(void)
 	{
+		if (_x == _y)
+			return (_y);
 		return (_x <= _y ? _x : _y);
 	}
 	T Swap_x(void)
@@ -60,7 +64,44 @@ class	inputNotDigitException : public std::exception
 public:
 	virtual const char *what() const throw()
 	{
-		return (BOLD_RED "\n✘ The input is not a digit or is equal to 0\n" RESET);
+		return (BOLD_RED "\n✘ The input is not a int or is equal to 0\n" RESET);
 	}
 };
+
+class	inputNotCharException : public std::exception
+{
+public:
+	virtual const char *what() const throw()
+	{
+		return (BOLD_RED "\n✘ The input is not a char or is equal to 0\n" RESET);
+	}
+};
+
+class	inputNotfloatException : public std::exception
+{
+public:
+	virtual const char *what() const throw()
+	{
+		return (BOLD_RED "\n✘ The input is not a float or is equal to 0\n" RESET);
+	}
+};
+
+class	inputNotDoubleException : public std::exception
+{
+public:
+	virtual const char *what() const throw()
+	{
+		return (BOLD_RED "\n✘ The input is not a double or is equal to 0\n" RESET);
+	}
+};
+
+class	inputNotCmdException : public std::exception
+{
+public:
+	virtual const char *what() const throw()
+	{
+		return (BOLD_RED "\n✘ The input is the right cmd\n" RESET);
+	}
+};
+
 #endif //CPP_WHATEVERS_HPP

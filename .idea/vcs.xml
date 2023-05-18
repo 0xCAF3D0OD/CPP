@@ -28,5 +28,8 @@
     <mapping directory="$PROJECT_DIR$/module_07/cpp07/test4" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/module_07/cpp07/test5" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/module_07/ex00/cpp07" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_08/cpp08" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_08/cpp08/test1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_08/ex00/cpp08" vcs="Git" />
   </component>
 </project>
